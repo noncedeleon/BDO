@@ -1,0 +1,314 @@
+
+textBlock 	= NodeName
+textBlocks 	= TagName
+"100"		= Attribute
+
+getTextContent
+
+
+
+
+
+	-<DOCUMENT id="3P01D">
+
+	<Document_Sequence>1</Document_Sequence>
+
+	<Document_UseForMailBody>N</Document_UseForMailBody>
+
+	<Document_MailGrouping>099</Document_MailGrouping>
+
+	<Document_UseColour>Y</Document_UseColour>
+
+	-<textBlocks showID="Y">
+
+	<textBlock id="100">Y</textBlock>
+
+	<textBlock id="100.10">N</textBlock>
+
+	<textBlock id="100.20">Y</textBlock>
+
+	<textBlock id="100.30">N</textBlock>
+
+	<textBlock id="100.40">Y</textBlock>
+
+	<textBlock id="120">Y</textBlock>
+
+	<textBlock id="120.10">Y</textBlock>
+
+	<textBlock id="120.10.05">Y</textBlock>
+
+	<textBlock id="120.10.10">N</textBlock>
+
+	<textBlock id="120.10.20">Y</textBlock>
+
+	<textBlock id="120.20">Y</textBlock>
+
+	<textBlock id="120.25">Y</textBlock>
+
+	<textBlock id="120.30">Y</textBlock>
+
+	<textBlock id="120.40">Y</textBlock>
+
+	<textBlock id="120.50">Y</textBlock>
+
+	<textBlock id="120.60">Y</textBlock>
+
+	<textBlock id="130">Y</textBlock>
+
+	<textBlock id="130.10">Y</textBlock>
+
+	<textBlock id="130.10.10">Y</textBlock>
+
+	<textBlock id="130.10.20">N</textBlock>
+
+	<textBlock id="130.10.5">Y</textBlock>
+
+	<textBlock id="130.10.6">N</textBlock>
+
+	<textBlock id="130.10.7">Y</textBlock>
+
+	<textBlock id="130.20">Y</textBlock>
+
+	<textBlock id="130.30">Y</textBlock>
+
+	<textBlock id="135">Y</textBlock>
+
+	<textBlock id="150">Y</textBlock>
+
+	<textBlock id="150.10">Y</textBlock>
+
+	<textBlock id="20">Y</textBlock>
+
+	<textBlock id="30.10">N</textBlock>
+
+	<textBlock id="30.20">Y</textBlock>
+
+	<textBlock id="30.30">Y</textBlock>
+
+	<textBlock id="30.50">Y</textBlock>
+
+	<textBlock id="35">Y</textBlock>
+
+	<textBlock id="35.10">N</textBlock>
+
+	<textBlock id="35.15">N</textBlock>
+
+	<textBlock id="35.20">N</textBlock>
+
+	<textBlock id="35.25">Y</textBlock>
+
+	<textBlock id="35.30">N</textBlock>
+
+	<textBlock id="35.35">N</textBlock>
+
+	<textBlock id="35.4">Y</textBlock>
+
+	<textBlock id="35.40">N</textBlock>
+
+	<textBlock id="35.5">Y</textBlock>
+
+	<textBlock id="35.5.10">Y</textBlock>
+
+	<textBlock id="35.5.90">Y</textBlock>
+
+	<textBlock id="35.50">N</textBlock>
+
+	<textBlock id="35.50.10">N</textBlock>
+
+	<textBlock id="35.55">Y</textBlock>
+
+	<textBlock id="35.55.10">Y</textBlock>
+
+	<textBlock id="35.55.20">Y</textBlock>
+
+	<textBlock id="35.55.30">Y</textBlock>
+
+	<textBlock id="35.60">Y</textBlock>
+
+	<textBlock id="40">Y</textBlock>
+
+	<textBlock id="40.10">Y</textBlock>
+
+	<textBlock id="40.100">Y</textBlock>
+
+	<textBlock id="40.20">Y</textBlock>
+
+	<textBlock id="40.30">N</textBlock>
+
+	<textBlock id="40.40">Y</textBlock>
+
+	<textBlock id="40.40.10">N</textBlock>
+
+	<textBlock id="40.40.12">N</textBlock>
+
+	<textBlock id="40.40.14">Y</textBlock>
+
+	<textBlock id="40.40.20">Y</textBlock>
+
+	<textBlock id="40.40.5.10">N</textBlock>
+
+	<textBlock id="40.40.5.20">Y</textBlock>
+
+	<textBlock id="40.50">N</textBlock>
+
+	<textBlock id="40.50.10">N</textBlock>
+
+	<textBlock id="40.50.20">N</textBlock>
+
+	<textBlock id="40.60">Y</textBlock>
+
+	<textBlock id="40.70">N</textBlock>
+
+	<textBlock id="40.75">Y</textBlock>
+
+	<textBlock id="40.80.10">N</textBlock>
+
+	<textBlock id="40.80.20">N</textBlock>
+
+	<textBlock id="40.90">N</textBlock>
+
+	<textBlock id="40.90.10">N</textBlock>
+
+	<textBlock id="40.90.20">N</textBlock>
+
+	<textBlock id="40.90.30">N</textBlock>
+
+	<textBlock id="40.90.40">N</textBlock>
+
+	<textBlock id="45">Y</textBlock>
+
+	<textBlock id="45.05">Y</textBlock>
+
+	<textBlock id="45.05.20">Y</textBlock>
+
+	<textBlock id="45.05.30">N</textBlock>
+
+	<textBlock id="45.40">Y</textBlock>
+
+	<textBlock id="50.10">N</textBlock>
+
+	<textBlock id="50.10.10">N</textBlock>
+
+	<textBlock id="50.10.20">N</textBlock>
+
+	<textBlock id="50.10.30">N</textBlock>
+
+	<textBlock id="50.10.40">N</textBlock>
+
+	<textBlock id="50.10.45">N</textBlock>
+
+	<textBlock id="50.10.50">N</textBlock>
+
+	<textBlock id="50.10.55">N</textBlock>
+
+	<textBlock id="50.10.60">N</textBlock>
+
+	<textBlock id="50.10.70">N</textBlock>
+
+	<textBlock id="50.10.80">N</textBlock>
+
+	<textBlock id="50.20">N</textBlock>
+
+	<textBlock id="50.30">N</textBlock>
+
+	<textBlock id="60">N</textBlock>
+
+	<textBlock id="68.10">Y</textBlock>
+
+	<textBlock id="68.20">N</textBlock>
+
+	<textBlock id="68.30">N</textBlock>
+
+	<textBlock id="68.30.10">N</textBlock>
+
+	<textBlock id="68.30.10.10">N</textBlock>
+
+	<textBlock id="68.30.20">N</textBlock>
+
+	<textBlock id="68.30.20.10">N</textBlock>
+
+	<textBlock id="68.30.30">N</textBlock>
+
+	<textBlock id="68.30.30.10">N</textBlock>
+
+	<textBlock id="68.40">Y</textBlock>
+
+	<textBlock id="68.40.10">Y</textBlock>
+
+	<textBlock id="68.40.15">Y</textBlock>
+
+	<textBlock id="68.40.15.10">N</textBlock>
+
+	<textBlock id="68.40.20">Y</textBlock>
+
+	<textBlock id="68.40.20.10">N</textBlock>
+
+	<textBlock id="68.40.30">Y</textBlock>
+
+	<textBlock id="68.40.30.10">N</textBlock>
+
+	<textBlock id="68.45">Y</textBlock>
+
+	<textBlock id="68.50">N</textBlock>
+
+	<textBlock id="68.60">N</textBlock>
+
+	<textBlock id="68.70">N</textBlock>
+
+	<textBlock id="68.90">Y</textBlock>
+
+	<textBlock id="70">Y</textBlock>
+
+	<textBlock id="80">Y</textBlock>
+
+	<textBlock id="80.10">Y</textBlock>
+
+	<textBlock id="80.20">N</textBlock>
+
+	<textBlock id="80.5.10">N</textBlock>
+
+	<textBlock id="80.5.20">N</textBlock>
+
+	<textBlock id="80.5.30">Y</textBlock>
+
+	<textBlock id="90">Y</textBlock>
+
+	<textBlock id="90.10">Y</textBlock>
+
+	<textBlock id="90.20">Y</textBlock>
+
+	<textBlock id="90.20.10">Y</textBlock>
+
+	<textBlock id="90.20.15">Y</textBlock>
+
+	<textBlock id="90.20.20">Y</textBlock>
+
+	<textBlock id="90.20.30">Y</textBlock>
+
+	<textBlock id="90.20.40">Y</textBlock>
+
+	<textBlock id="90.30">Y</textBlock>
+
+	<textBlock id="90.30.10">N</textBlock>
+
+	<textBlock id="90.30.20">Y</textBlock>
+
+	<textBlock id="90.40">Y</textBlock>
+
+	<textBlock id="90.50">N</textBlock>
+
+	<textBlock id="90.50.10">N</textBlock>
+
+	<textBlock id="90.50.20">N</textBlock>
+
+	<textBlock id="90.60">Y</textBlock>
+
+	<textBlock id="90.60.10">Y</textBlock>
+
+	<textBlock id="90.60.20">Y</textBlock>
+
+	<textBlock id="90.70">Y</textBlock>
+
+	<textBlock id="90.80">Y</textBlock>
+
+	</textBlocks>

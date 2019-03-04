@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<DOCUMENT id="3P02D">
+
+<Document_Sequence>2</Document_Sequence>
+
+<Document_UseForMailBody>N</Document_UseForMailBody>
+
+<Document_MailGrouping>101</Document_MailGrouping>
+
+<Document_UseColour>Y</Document_UseColour>
+
+
+-<textBlocks showID="Y">
+
+<textBlock id="10">Y</textBlock>
+
+<textBlock id="100">Y</textBlock>
+
+<textBlock id="110">Y</textBlock>
+
+<textBlock id="130">Y</textBlock>
+
+<textBlock id="140">Y</textBlock>
+
+<textBlock id="150">Y</textBlock>
+
+<textBlock id="150.10">Y</textBlock>
+
+<textBlock id="150.20">Y</textBlock>
+
+<textBlock id="150.30">Y</textBlock>
+
+<textBlock id="20">Y</textBlock>
+
+<textBlock id="20.10">Y</textBlock>
+
+<textBlock id="20.100">Y</textBlock>
+
+<textBlock id="20.110">Y</textBlock>
+
+<textBlock id="20.20">Y</textBlock>
+
+<textBlock id="20.40">Y</textBlock>
+
+<textBlock id="20.40.10">N</textBlock>
+
+<textBlock id="20.40.30">Y</textBlock>
+
+<textBlock id="20.50">Y</textBlock>
+
+<textBlock id="20.90">Y</textBlock>
+
+<textBlock id="200">Y</textBlock>
+
+<textBlock id="40">Y</textBlock>
+
+<textBlock id="40.10">Y</textBlock>
+
+<textBlock id="40.10.10">Y</textBlock>
+
+<textBlock id="40.10.20">Y</textBlock>
+
+<textBlock id="40.10.30">Y</textBlock>
+
+<textBlock id="40.10.40">Y</textBlock>
+
+<textBlock id="40.10.50">Y</textBlock>
+
+<textBlock id="40.10.50.10">Y</textBlock>
+
+<textBlock id="40.10.50.20">Y</textBlock>
+
+<textBlock id="40.10.60">Y</textBlock>
+
+<textBlock id="40.100">Y</textBlock>
+
+<textBlock id="40.15">N</textBlock>
+
+<textBlock id="40.20">N</textBlock>
+
+<textBlock id="40.20.10">N</textBlock>
+
+<textBlock id="40.20.20">N</textBlock>
+
+<textBlock id="40.20.30">N</textBlock>
+
+<textBlock id="40.5">Y</textBlock>
+
+<textBlock id="40.50.10">Y</textBlock>
+
+<textBlock id="40.50.20">N</textBlock>
+
+<textBlock id="50">Y</textBlock>
+
+<textBlock id="50.100">Y</textBlock>
+
+<textBlock id="50.150">Y</textBlock>
+
+<textBlock id="50.20">N</textBlock>
+
+<textBlock id="50.30">Y</textBlock>
+
+<textBlock id="50.40">N</textBlock>
+
+<textBlock id="50.40.10">N</textBlock>
+
+<textBlock id="50.40.20">N</textBlock>
+
+<textBlock id="50.45">Y</textBlock>
+
+<textBlock id="50.45.10">Y</textBlock>
+
+<textBlock id="50.50">N</textBlock>
+
+<textBlock id="50.60">N</textBlock>
+
+<textBlock id="50.70">N</textBlock>
+
+<textBlock id="50.80">Y</textBlock>
+
+<textBlock id="50.90">Y</textBlock>
+
+<textBlock id="50.90.10">Y</textBlock>
+
+<textBlock id="50.90.10.10">Y</textBlock>
+
+<textBlock id="50.90.20">Y</textBlock>
+
+<textBlock id="60">Y</textBlock>
+
+<textBlock id="60.10">Y</textBlock>
+
+<textBlock id="60.10.10">N</textBlock>
+
+<textBlock id="60.10.20">Y</textBlock>
+
+<textBlock id="60.10.40">N</textBlock>
+
+<textBlock id="60.10.45">Y</textBlock>
+
+<textBlock id="60.10.50">N</textBlock>
+
+<textBlock id="60.10.60">N</textBlock>
+
+<textBlock id="60.10.70">Y</textBlock>
+
+<textBlock id="60.10.80">Y</textBlock>
+
+<textBlock id="60.20">N</textBlock>
+
+<textBlock id="60.25">Y</textBlock>
+
+<textBlock id="60.30">N</textBlock>
+
+<textBlock id="80">Y</textBlock>
+
+</textBlocks>
+
+
+-<NN desc="NN fields">
+
+<NN_VERZEND_POSTCD_CP1/>
+
+<NN_VERZEND_POSTCD>3013 AL</NN_VERZEND_POSTCD>
+
+<NN_VERZEND_POSTBUS_CP2/>
+
+<NN_VERZEND_POSTBUS_CP1/>
+
+<NN_VERZEND_POSTBUS/>
+
+<NN_VERZEND_ORGANISA_NM_CP2/>
+
+<NN_VERZEND_ORGANISA_NM_CP1/>
+
+<NN_VERZEND_ORGANISATIE_NM/>
+
+<NN_VERZEND_LOKATIE_CP2/>
+
+<NN_VERZEND_LOKATIE_CP1/>
+
+<NN_VERZEND_LANDNAAM_CP2>Nederland</NN_VERZEND_LANDNAAM_CP2>
+
+<NN_VERZEND_LANDNAAM_CP1>Nederland</NN_VERZEND_LANDNAAM_CP1>
+
+<NN_VERZEND_LANDNAAM>Nederland</NN_VERZEND_LANDNAAM>
+
+<NN_VERZEND_LANDCODE_CP2/>
+
+<NN_VERZEND_LANDCODE_CP1/>
+
+<NN_VERZEND_LANDCODE>NL</NN_VERZEND_LANDCODE>
+
+<NN_VERZEND_HUISNR_TOEV_CP2/>
+
+<NN_VERZEND_POSTCD_CP2/>
+
+<NN_VERZEND_STRAATNAAM>Weena</NN_VERZEND_STRAATNAAM>
+
+<NN_VERZEND_STRAATNM_CP1/>
+
+<NN_VERZEND_STRAATNM_CP2/>
+
+<NN_VERZEND_TUSSENVGSL>de</NN_VERZEND_TUSSENVGSL>
+
+<NN_VERZEND_TUSSENVGSL_CP1/>
+
+<NN_VERZEND_TUSSENVGSL_CP2/>
+
+<NN_VERZEND_VOORNAAM/>
+
+<NN_VERZEND_VOORNAAM_CP1/>
+
+<NN_VERZEND_VOORNAAM_CP2/>
+
+<NN_VERZEND_VRLTTR>P.P.P.</NN_VERZEND_VRLTTR>
+
+<NN_VERZEND_VRLTTR_CP1/>
+
+<NN_VERZEND_VRLTTR_CP2/>
+
+<NN_VERZEND_WNPLTS>ROTTERDAM</NN_VERZEND_WNPLTS>
+
+<NN_VERZEND_WNPLTS_CP1/>
+
+<NN_VERZEND_WNPLTS_CP2/>
+
+<NN_ZOEKVA_WEBSITE/>
+
+<NN_AFD_NAAM>Nationale-Nederlanden Leven</NN_AFD_NAAM>
+
+<NN_ANTWOORDNR_ADR_NR>21</NN_ANTWOORDNR_ADR_NR>
+
+<NN_ANTWOORDNR_ADR_POSTCD>3000 VB</NN_ANTWOORDNR_ADR_POSTCD>
+
+<NN_ANTWOORDNR_ADR_WNPLTS>Rotterdam</NN_ANTWOORDNR_ADR_WNPLTS>
+
+<NN_BEHANDELAAR>TOSCATESTDIP</NN_BEHANDELAAR>
+
+<NN_BEZ_ADR_HUISNR>505</NN_BEZ_ADR_HUISNR>
+
+<NN_BEZ_ADR_HUISNR_TOEV/>
+
+<NN_BEZ_ADR_LOKAT/>
+
+<NN_BEZ_ADR_STRAATNAAM>Weena</NN_BEZ_ADR_STRAATNAAM>
+
+<NN_BEZ_ADR_WNPLTS>ROTTERDAM</NN_BEZ_ADR_WNPLTS>
+
+<NN_BP_ID>503892281</NN_BP_ID>
+
+<NN_EMAIL>pensioenuitkering@nn.nl</NN_EMAIL>
+
+<NN_GENEREER_DATUM>20190208</NN_GENEREER_DATUM>
+
+<NN_ONDERTEKENAAR_CD>NNDP_Directeur_Commercie</NN_ONDERTEKENAAR_CD>
+
+<NN_ONDERWERP>Alstublieft! Uw Persoonlijke Pensioenuitkering polis.</NN_ONDERWERP>
+
+<NN_ORVDIL_WEBSITE/>
+
+<NN_POST_ADR_HUISNR>505</NN_POST_ADR_HUISNR>
+
+<NN_VERZEND_HUISNR_TOEV_CP1/>
+
+<NN_VERZEND_HUISNR_TOEV/>
+
+<NN_VERZEND_HUISNR_CP2/>
+
+<NN_VERZEND_HUISNR_CP1/>
+
+<NN_VERZEND_HUISNR>505</NN_VERZEND_HUISNR>
+
+<NN_VERZEND_GESLACHT_CP2/>
+
+<NN_VERZEND_GESLACHT_CP1/>
+
+<NN_VERZEND_GESLACHT>M</NN_VERZEND_GESLACHT>
+
+<NN_VERZEND_ACHTERNAAM_CP2/>
+
+<NN_VERZEND_ACHTERNAAM_CP1/>
+
+<NN_VERZEND_ACHTERNAAM>Main_REG_NN3P_TC2</NN_VERZEND_ACHTERNAAM>
+
+<NN_TELNR>010 513 01 05</NN_TELNR>
+
+<NN_TEAM_NAAM>Team Persoonlijke Pensioenuitkering</NN_TEAM_NAAM>
+
+<NN_TEAM_LOCATIE>DP 1.13.069</NN_TEAM_LOCATIE>
+
+<NN_RECHTSPERSOON>Persoonlijke Pensioenuitkering</NN_RECHTSPERSOON>
+
+<NN_PROCES_ID>666398</NN_PROCES_ID>
+
+<NN_POST_ADR_STRAATNAAM>Weena</NN_POST_ADR_STRAATNAAM>
+
+</NN>
+
+
+-<PO id="00000000059013754" desc="Policy" PE_ref="0503892281">
+
+
+-<PC id="10359311" desc="Policy Contract">
+
+
+-<DE id="10359311\1" desc="Coverage" PE_ref="0503892361">
+
+<DE_SOORT>13</DE_SOORT>
+
+<DE_PREMIEVRIJ_BDR>346.7500</DE_PREMIEVRIJ_BDR>
+
+</DE>
+
+
+-<DE id="10359311\2" desc="Coverage">
+
+<DE_PREMIEVRIJ_BDR>718.2100</DE_PREMIEVRIJ_BDR>
+
+<DE_SOORT>1</DE_SOORT>
+
+</DE>
+
+
+-<DE id="10359311\3" desc="Coverage" PE_ref="0503892361">
+
+<DE_PREMIEVRIJ_BDR>407.3600</DE_PREMIEVRIJ_BDR>
+
+<DE_SOORT>2</DE_SOORT>
+
+</DE>
+
+
+-<DE id="10359311\4" desc="Coverage" PE_ref="0503892361">
+
+<DE_PREMIEVRIJ_BDR>196.9900</DE_PREMIEVRIJ_BDR>
+
+<DE_SOORT>2</DE_SOORT>
+
+</DE>
+
+<PC_EXCHANGE_PERC>070</PC_EXCHANGE_PERC>
+
+<PC_HIGHLOW_CHG_DT>20190201</PC_HIGHLOW_CHG_DT>
+
+<PC_HIGHLOW_JAREN>001</PC_HIGHLOW_JAREN>
+
+<PC_HIGHLOW_PERC>80.00000</PC_HIGHLOW_PERC>
+
+<PC_PAYMENT_START_DT>20190208</PC_PAYMENT_START_DT>
+
+<PC_RISICOPROFIEL>003</PC_RISICOPROFIEL>
+
+<PC_TOTAL_OP>1064.96</PC_TOTAL_OP>
+
+<PC_TOTAL_OP_WIJZ>851.97</PC_TOTAL_OP_WIJZ>
+
+<PC_TOTAL_PP>604.35</PC_TOTAL_PP>
+
+<PC_VAR_VS_VAST_BASIS_PERC>70.00</PC_VAR_VS_VAST_BASIS_PERC>
+
+<PC_VAR_VS_VAST_BELEG_PERC>30.00</PC_VAR_VS_VAST_BELEG_PERC>
+
+<PC_BENEF_START_DT>20180201</PC_BENEF_START_DT>
+
+<PC_1YR_AFTER_BENSTART_DT>20190201</PC_1YR_AFTER_BENSTART_DT>
+
+</PC>
+
+<PO_TOT_KAP_MIN_KST_BELEG_BDR>66699.53</PO_TOT_KAP_MIN_KST_BELEG_BDR>
+
+<PO_TOT_KAP_MIN_KST_BDR>242721.78</PO_TOT_KAP_MIN_KST_BDR>
+
+<PO_NR>59013754</PO_NR>
+
+<PO_TOT_KAPMINKSTCB_BAS_BDR/>
+
+<PO_TOT_KAP_MIN_KST_BASIS_BDR>156022.25</PO_TOT_KAP_MIN_KST_BASIS_BDR>
+
+<PO_TOT_KAP_BDR>230000.00</PO_TOT_KAP_BDR>
+
+<PO_TOT_KAPMINKSTCB_BEL_BDR/>
+
+</PO>
+
+
+-<PE id="0503892361" desc="Person">
+
+<PE_SOORT desc="Partner">PA</PE_SOORT>
+
+<PE_PREF_IBAN/>
+
+<PE_LEAD_VRLTTR>P.</PE_LEAD_VRLTTR>
+
+<PE_LEAD_TUSSENVGSL>de</PE_LEAD_TUSSENVGSL>
+
+<PE_LEAD_GESLACHT>V</PE_LEAD_GESLACHT>
+
+<PE_LEAD_GEB_DT>19520601</PE_LEAD_GEB_DT>
+
+<PE_LEAD_ACHTERNAAM>PA_REG_TC2</PE_LEAD_ACHTERNAAM>
+
+</PE>
+
+<PU desc="Pension Executor" PE_ref="0503892361"/>
+
+
+-<PE id="0503892281" desc="Person" PO_ref="00000000059013754">
+
+<PE_LEAD_ACHTERNAAM>Main_REG_NN3P_TC2</PE_LEAD_ACHTERNAAM>
+
+<PE_LEAD_GEB_DT>19520101</PE_LEAD_GEB_DT>
+
+<PE_LEAD_GESLACHT>M</PE_LEAD_GESLACHT>
+
+<PE_LEAD_TUSSENVGSL>de</PE_LEAD_TUSSENVGSL>
+
+<PE_LEAD_VRLTTR>P.P.P.</PE_LEAD_VRLTTR>
+
+<PE_PREF_IBAN>NL95RABO0134152352</PE_PREF_IBAN>
+
+<PE_SOORT desc="Main participant">DL</PE_SOORT>
+
+</PE>
+
+</DOCUMENT>
