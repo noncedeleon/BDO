@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DOCUMENT id="3P01D">
+<Document_Sequence>1</Document_Sequence>
+<Document_UseForMailBody>N</Document_UseForMailBody>
+<Document_MailGrouping>099</Document_MailGrouping>
+<Document_UseColour>Y</Document_UseColour>
+-<textBlocks showID="Y">
+<textBlock id="100">N</textBlock>
+<textBlock id="100.10">N</textBlock>
+<textBlock id="100.20">N</textBlock>
+<textBlock id="100.30">N</textBlock>
+<textBlock id="100.40">N</textBlock>
+<textBlock id="120">Y</textBlock>
+<textBlock id="120.10">Y</textBlock>
+<textBlock id="120.10.05">Y</textBlock>
+<textBlock id="120.10.10">Y</textBlock>
+<textBlock id="120.10.20">N</textBlock>
+<textBlock id="120.20">Y</textBlock>
+<textBlock id="120.25">Y</textBlock>
+<textBlock id="120.30">Y</textBlock>
+<textBlock id="120.40">N</textBlock>
+<textBlock id="120.50">Y</textBlock>
+<textBlock id="120.60">Y</textBlock>
+<textBlock id="130">Y</textBlock>
+<textBlock id="130.10">Y</textBlock>
+<textBlock id="130.10.10">Y</textBlock>
+<textBlock id="130.10.20">N</textBlock>
+<textBlock id="130.10.5">Y</textBlock>
+<textBlock id="130.10.6">N</textBlock>
+<textBlock id="130.10.7">Y</textBlock>
+<textBlock id="130.20">Y</textBlock>
+<textBlock id="130.30">Y</textBlock>
+<textBlock id="135">N</textBlock>
+<textBlock id="150">Y</textBlock>
+<textBlock id="150.10">Y</textBlock>
+<textBlock id="20">Y</textBlock>
+<textBlock id="30.10">Y</textBlock>
+<textBlock id="30.20">N</textBlock>
+<textBlock id="30.30">Y</textBlock>
+<textBlock id="30.50">Y</textBlock>
+<textBlock id="35">Y</textBlock>
+<textBlock id="35.10">N</textBlock>
+<textBlock id="35.15">N</textBlock>
+<textBlock id="35.20">N</textBlock>
+<textBlock id="35.25">Y</textBlock>
+<textBlock id="35.30">Y</textBlock>
+<textBlock id="35.35">N</textBlock>
+<textBlock id="35.4">Y</textBlock>
+<textBlock id="35.40">N</textBlock>
+<textBlock id="35.5">Y</textBlock>
+<textBlock id="35.5.10">N</textBlock>
+<textBlock id="35.5.90">Y</textBlock>
+<textBlock id="35.50">Y</textBlock>
+<textBlock id="35.50.10">Y</textBlock>
+<textBlock id="35.55">N</textBlock>
+<textBlock id="35.55.10">N</textBlock>
+<textBlock id="35.55.20">N</textBlock>
+<textBlock id="35.55.30">N</textBlock>
+<textBlock id="35.60">Y</textBlock>
+<textBlock id="40">Y</textBlock>
+<textBlock id="40.10">Y</textBlock>
+<textBlock id="40.100">Y</textBlock>
+<textBlock id="40.20">Y</textBlock>
+<textBlock id="40.30">N</textBlock>
+<textBlock id="40.40">Y</textBlock>
+<textBlock id="40.40.10">Y</textBlock>
+<textBlock id="40.40.12">N</textBlock>
+<textBlock id="40.40.14">N</textBlock>
+<textBlock id="40.40.20">Y</textBlock>
+<textBlock id="40.40.5.10">Y</textBlock>
+<textBlock id="40.40.5.20">N</textBlock>
+<textBlock id="40.50">N</textBlock>
+<textBlock id="40.50.10">N</textBlock>
+<textBlock id="40.50.20">N</textBlock>
+<textBlock id="40.60">Y</textBlock>
+<textBlock id="40.70">Y</textBlock>
+<textBlock id="40.75">N</textBlock>
+<textBlock id="40.80.10">N</textBlock>
+<textBlock id="40.80.20">N</textBlock>
+<textBlock id="40.90">N</textBlock>
+<textBlock id="40.90.10">N</textBlock>
+<textBlock id="40.90.20">N</textBlock>
+<textBlock id="40.90.30">N</textBlock>
+<textBlock id="40.90.40">N</textBlock>
+<textBlock id="45">Y</textBlock>
+<textBlock id="45.05">Y</textBlock>
+<textBlock id="45.05.20">Y</textBlock>
+<textBlock id="45.05.30">N</textBlock>
+<textBlock id="45.40">Y</textBlock>
+<textBlock id="50.10">N</textBlock>
+<textBlock id="50.10.10">N</textBlock>
+<textBlock id="50.10.20">N</textBlock>
+<textBlock id="50.10.30">N</textBlock>
+<textBlock id="50.10.40">N</textBlock>
+<textBlock id="50.10.45">N</textBlock>
+<textBlock id="50.10.50">N</textBlock>
+<textBlock id="50.10.55">N</textBlock>
+<textBlock id="50.10.60">N</textBlock>
+<textBlock id="50.10.70">N</textBlock>
+<textBlock id="50.10.80">N</textBlock>
+<textBlock id="50.20">N</textBlock>
+<textBlock id="50.30">N</textBlock>
+<textBlock id="60">N</textBlock>
+<textBlock id="68.10">Y</textBlock>
+<textBlock id="68.20">Y</textBlock>
+<textBlock id="68.30">Y</textBlock>
+<textBlock id="68.30.10">Y</textBlock>
+<textBlock id="68.30.10.10">N</textBlock>
+<textBlock id="68.30.20">Y</textBlock>
+<textBlock id="68.30.20.10">N</textBlock>
+<textBlock id="68.30.30">Y</textBlock>
+<textBlock id="68.30.30.10">N</textBlock>
+<textBlock id="68.40">N</textBlock>
+<textBlock id="68.40.10">N</textBlock>
+<textBlock id="68.40.15">N</textBlock>
+<textBlock id="68.40.15.10">N</textBlock>
+<textBlock id="68.40.20">N</textBlock>
+<textBlock id="68.40.20.10">N</textBlock>
+<textBlock id="68.40.30">N</textBlock>
+<textBlock id="68.40.30.10">N</textBlock>
+<textBlock id="68.45">Y</textBlock>
+<textBlock id="68.50">Y</textBlock>
+<textBlock id="68.60">N</textBlock>
+<textBlock id="68.70">N</textBlock>
+<textBlock id="68.90">Y</textBlock>
+<textBlock id="70">Y</textBlock>
+<textBlock id="80">Y</textBlock>
+<textBlock id="80.10">Y</textBlock>
+<textBlock id="80.20">N</textBlock>
+<textBlock id="80.5.10">Y</textBlock>
+<textBlock id="80.5.20">N</textBlock>
+<textBlock id="80.5.30">N</textBlock>
+<textBlock id="90">Y</textBlock>
+<textBlock id="90.10">Y</textBlock>
+<textBlock id="90.20">Y</textBlock>
+<textBlock id="90.20.10">Y</textBlock>
+<textBlock id="90.20.15">Y</textBlock>
+<textBlock id="90.20.20">Y</textBlock>
+<textBlock id="90.20.30">Y</textBlock>
+<textBlock id="90.20.40">Y</textBlock>
+<textBlock id="90.30">Y</textBlock>
+<textBlock id="90.30.10">Y</textBlock>
+<textBlock id="90.30.20">N</textBlock>
+<textBlock id="90.40">Y</textBlock>
+<textBlock id="90.50">N</textBlock>
+<textBlock id="90.50.10">N</textBlock>
+<textBlock id="90.50.20">N</textBlock>
+<textBlock id="90.60">N</textBlock>
+<textBlock id="90.60.10">N</textBlock>
+<textBlock id="90.60.20">N</textBlock>
+<textBlock id="90.70">Y</textBlock>
+<textBlock id="90.80">Y</textBlock>
+</textBlocks>
+-<NN desc="NN fields">
+<NN_VERZEND_HUISNR_TOEV_CP2/>
+<NN_VERZEND_LANDCODE>NL</NN_VERZEND_LANDCODE>
+<NN_VERZEND_LANDCODE_CP1/>
+<NN_VERZEND_LANDCODE_CP2/>
+<NN_VERZEND_LANDNAAM>Nederland</NN_VERZEND_LANDNAAM>
+<NN_VERZEND_LANDNAAM_CP1>Nederland</NN_VERZEND_LANDNAAM_CP1>
+<NN_VERZEND_LANDNAAM_CP2>Nederland</NN_VERZEND_LANDNAAM_CP2>
+<NN_VERZEND_LOKATIE_CP1/>
+<NN_VERZEND_LOKATIE_CP2/>
+<NN_VERZEND_ORGANISATIE_NM/>
+<NN_VERZEND_ORGANISA_NM_CP1/>
+<NN_VERZEND_ORGANISA_NM_CP2/>
+<NN_VERZEND_POSTBUS/>
+<NN_VERZEND_POSTBUS_CP1/>
+<NN_VERZEND_POSTBUS_CP2/>
+<NN_VERZEND_POSTCD>3013 AL</NN_VERZEND_POSTCD>
+<NN_VERZEND_POSTCD_CP1/>
+<NN_VERZEND_POSTCD_CP2/>
+<NN_VERZEND_STRAATNAAM>Weena</NN_VERZEND_STRAATNAAM>
+<NN_VERZEND_STRAATNM_CP1/>
+<NN_VERZEND_STRAATNM_CP2/>
+<NN_VERZEND_TUSSENVGSL>de</NN_VERZEND_TUSSENVGSL>
+<NN_VERZEND_TUSSENVGSL_CP1/>
+<NN_VERZEND_TUSSENVGSL_CP2/>
+<NN_VERZEND_VOORNAAM/>
+<NN_VERZEND_VOORNAAM_CP1/>
+<NN_VERZEND_VOORNAAM_CP2/>
+<NN_VERZEND_VRLTTR>P.P.P.</NN_VERZEND_VRLTTR>
+<NN_VERZEND_VRLTTR_CP1/>
+<NN_VERZEND_VRLTTR_CP2/>
+<NN_VERZEND_WNPLTS>Rotterdam</NN_VERZEND_WNPLTS>
+<NN_VERZEND_WNPLTS_CP1/>
+<NN_VERZEND_WNPLTS_CP2/>
+<NN_ZOEKVA_WEBSITE/>
+<NN_VERZEND_HUISNR_TOEV_CP1/>
+<NN_AFD_NAAM>Nationale-Nederlanden Leven</NN_AFD_NAAM>
+<NN_ANTWOORDNR_ADR_NR>21</NN_ANTWOORDNR_ADR_NR>
+<NN_ANTWOORDNR_ADR_POSTCD>3000 VB</NN_ANTWOORDNR_ADR_POSTCD>
+<NN_ANTWOORDNR_ADR_WNPLTS>Rotterdam</NN_ANTWOORDNR_ADR_WNPLTS>
+<NN_BEHANDELAAR>TOSCATESTDIP</NN_BEHANDELAAR>
+<NN_BEZ_ADR_HUISNR>505</NN_BEZ_ADR_HUISNR>
+<NN_BEZ_ADR_HUISNR_TOEV/>
+<NN_BEZ_ADR_LOKAT/>
+<NN_BEZ_ADR_STRAATNAAM>Weena</NN_BEZ_ADR_STRAATNAAM>
+<NN_BEZ_ADR_WNPLTS>ROTTERDAM</NN_BEZ_ADR_WNPLTS>
+<NN_BP_ID>503892740</NN_BP_ID>
+<NN_EMAIL>pensioenuitkering@nn.nl</NN_EMAIL>
+<NN_GENEREER_DATUM>20190211</NN_GENEREER_DATUM>
+<NN_ONDERTEKENAAR_CD>NNDP_Directeur_Commercie</NN_ONDERTEKENAAR_CD>
+<NN_ONDERWERP>Uw Persoonlijke Pensioenuitkering offerte</NN_ONDERWERP>
+<NN_ORVDIL_WEBSITE/>
+<NN_POST_ADR_HUISNR>505</NN_POST_ADR_HUISNR>
+<NN_VERZEND_HUISNR_TOEV/>
+<NN_VERZEND_HUISNR_CP2/>
+<NN_VERZEND_HUISNR_CP1/>
+<NN_VERZEND_HUISNR>505</NN_VERZEND_HUISNR>
+<NN_VERZEND_GESLACHT_CP2/>
+<NN_VERZEND_GESLACHT_CP1/>
+<NN_VERZEND_GESLACHT>V</NN_VERZEND_GESLACHT>
+<NN_VERZEND_ACHTERNAAM_CP2/>
+<NN_VERZEND_ACHTERNAAM_CP1/>
+<NN_VERZEND_ACHTERNAAM>Main_REG_NN3P_TC3</NN_VERZEND_ACHTERNAAM>
+<NN_TELNR>010 513 01 05</NN_TELNR>
+<NN_TEAM_NAAM>Team Persoonlijke Pensioenuitkering</NN_TEAM_NAAM>
+<NN_TEAM_LOCATIE>DP 1.13.069</NN_TEAM_LOCATIE>
+<NN_RECHTSPERSOON>Persoonlijke Pensioenuitkering</NN_RECHTSPERSOON>
+<NN_PROCES_ID>666631</NN_PROCES_ID>
+<NN_POST_ADR_STRAATNAAM>Weena</NN_POST_ADR_STRAATNAAM>
+</NN>
+-<OF desc="Offer">
+<OF_DT>20190211</OF_DT>
+<OF_GELDIGH_DT>20190218</OF_GELDIGH_DT>
+<OF_NUMMER>AP-058677</OF_NUMMER>
+</OF>
+-<PE id="0000000001" desc="Person" PO_ref="00000000000000001">
+<PE_WNPLTS>Rotterdam</PE_WNPLTS>
+<PE_TELNR>0625444469</PE_TELNR>
+<PE_STRAATNAAM>Weena</PE_STRAATNAAM>
+<PE_SOORT desc="Main participant">DL</PE_SOORT>
+<PE_POSTCD>3013AL</PE_POSTCD>
+<PE_LEAD_VRLTTR>P.P.P.</PE_LEAD_VRLTTR>
+<PE_LEAD_TUSSENVGSL>de</PE_LEAD_TUSSENVGSL>
+<PE_LEAD_GESLACHT>V</PE_LEAD_GESLACHT>
+<PE_LEAD_GEB_DT>19520101</PE_LEAD_GEB_DT>
+<PE_LEAD_ACHTERNAAM>Main_REG_NN3P_TC3</PE_LEAD_ACHTERNAAM>
+<PE_HUISNR_TOEV/>
+<PE_HUISNR>505</PE_HUISNR>
+<PE_EMAIL>jensen.bigelow@nn.nl</PE_EMAIL>
+<PE_BURG_STAAT/>
+<PE_BSN>713405600</PE_BSN>
+</PE>
+-<PO id="00000000000000001" desc="Policy" PE_ref="0000000001">
+-<PC id="1" desc="Policy Contract">
+-<DE id="1\OP" desc="Coverage">
+<DE_PREMIEVRIJ_BDR>549.8200</DE_PREMIEVRIJ_BDR>
+<DE_SOORT desc="Missing description for value: 1\OP">1</DE_SOORT>
+</DE>
+-<DE id="1\FD" desc="Coverage">
+<DE_SOORT desc="Missing description for value: 1\FD">13</DE_SOORT>
+<DE_PREMIEVRIJ_BDR>509.1300</DE_PREMIEVRIJ_BDR>
+</DE>
+-<DE id="1\TOTAL_OP" desc="Coverage">
+<DE_SOORT desc="Missing description for value: 1\TOTAL_OP">NOT IMPLEMENTED YET</DE_SOORT>
+<DE_PREMIEVRIJ_BDR>1058.9500</DE_PREMIEVRIJ_BDR>
+</DE>
+-<BEPJ id="1\O" desc="Benefit Projection" scenario="O">
+-<DEPJ id="1\O\OP" desc="Coverage Projection" type="1 ">
+<DEPJ_PREMIEVRIJ_VAST_BDR_W>0.00</DEPJ_PREMIEVRIJ_VAST_BDR_W>
+<DEPJ_PREMIEVRIJ_VAST_BDR>969.78</DEPJ_PREMIEVRIJ_VAST_BDR>
+<DEPJ_PREMIEVRIJ_VAR_BDR>1058.95</DEPJ_PREMIEVRIJ_VAR_BDR>
+<DEPJ_PREMIEVRIJ_VAR_20_BDR>1944.68</DEPJ_PREMIEVRIJ_VAR_20_BDR>
+<DEPJ_PREMIEVRIJ_VAR_15_BDR>1876.76</DEPJ_PREMIEVRIJ_VAR_15_BDR>
+<DEPJ_PREMIEVRIJ_VAR_10_BDR>1795.01</DEPJ_PREMIEVRIJ_VAR_10_BDR>
+<DEPJ_PREMIEVRIJ_CONST_BDR>0</DEPJ_PREMIEVRIJ_CONST_BDR>
+<DEPJ_PREMIEVRIJ_VAR_05_BDR>1703.06</DEPJ_PREMIEVRIJ_VAR_05_BDR>
+</DEPJ>
+</BEPJ>
+-<BEPJ id="1\N" desc="Benefit Projection" scenario="N">
+-<DEPJ id="1\N\OP" desc="Coverage Projection" type="1 ">
+<DEPJ_PREMIEVRIJ_VAST_BDR_W>0.00</DEPJ_PREMIEVRIJ_VAST_BDR_W>
+<DEPJ_PREMIEVRIJ_VAST_BDR>969.78</DEPJ_PREMIEVRIJ_VAST_BDR>
+<DEPJ_PREMIEVRIJ_VAR_BDR>1058.95</DEPJ_PREMIEVRIJ_VAR_BDR>
+<DEPJ_PREMIEVRIJ_VAR_20_BDR>1049.23</DEPJ_PREMIEVRIJ_VAR_20_BDR>
+<DEPJ_PREMIEVRIJ_VAR_15_BDR>1060.48</DEPJ_PREMIEVRIJ_VAR_15_BDR>
+<DEPJ_PREMIEVRIJ_VAR_10_BDR>1081.70</DEPJ_PREMIEVRIJ_VAR_10_BDR>
+<DEPJ_PREMIEVRIJ_VAR_05_BDR>1103.33</DEPJ_PREMIEVRIJ_VAR_05_BDR>
+<DEPJ_PREMIEVRIJ_CONST_BDR>0</DEPJ_PREMIEVRIJ_CONST_BDR>
+</DEPJ>
+</BEPJ>
+-<BEPJ id="1\P" desc="Benefit Projection" scenario="P">
+-<DEPJ id="1\P\OP" desc="Coverage Projection" type="1 ">
+<DEPJ_PREMIEVRIJ_VAST_BDR_W>0.00</DEPJ_PREMIEVRIJ_VAST_BDR_W>
+<DEPJ_PREMIEVRIJ_VAST_BDR>969.78</DEPJ_PREMIEVRIJ_VAST_BDR>
+<DEPJ_PREMIEVRIJ_VAR_BDR>1058.95</DEPJ_PREMIEVRIJ_VAR_BDR>
+<DEPJ_PREMIEVRIJ_VAR_20_BDR>634.48</DEPJ_PREMIEVRIJ_VAR_20_BDR>
+<DEPJ_PREMIEVRIJ_VAR_15_BDR>685.02</DEPJ_PREMIEVRIJ_VAR_15_BDR>
+<DEPJ_PREMIEVRIJ_VAR_10_BDR>749.97</DEPJ_PREMIEVRIJ_VAR_10_BDR>
+<DEPJ_PREMIEVRIJ_VAR_05_BDR>832.55</DEPJ_PREMIEVRIJ_VAR_05_BDR>
+<DEPJ_PREMIEVRIJ_CONST_BDR>0</DEPJ_PREMIEVRIJ_CONST_BDR>
+</DEPJ>
+</BEPJ>
+-<IK id="0000000000000000100001" desc="Incoming Capital (one time premium)">
+<IK_REGNR_PUO>CAP 1</IK_REGNR_PUO>
+<IK_OVERDR_WRD>130000.00</IK_OVERDR_WRD>
+<IK_NAAM_PUO>Nationale-Nederlanden</IK_NAAM_PUO>
+<IK_KAP_WG_NAAM>Oude werkgever I</IK_KAP_WG_NAAM>
+<IK_KAP_UNISEX>SN</IK_KAP_UNISEX>
+<IK_KAP_EIND_DT>20180201</IK_KAP_EIND_DT>
+</IK>
+-<IK id="0000000000000000200018" desc="Incoming Capital (one time premium)">
+<IK_KAP_EIND_DT>20180201</IK_KAP_EIND_DT>
+<IK_KAP_UNISEX>SN</IK_KAP_UNISEX>
+<IK_KAP_WG_NAAM>Niets is zeker</IK_KAP_WG_NAAM>
+<IK_NAAM_PUO>Nationale-Nederlanden</IK_NAAM_PUO>
+<IK_OVERDR_WRD>130000.00</IK_OVERDR_WRD>
+<IK_REGNR_PUO>CAP 2</IK_REGNR_PUO>
+</IK>
+<PC_VAR_VS_VAST_BELEG_PERC>45.00</PC_VAR_VS_VAST_BELEG_PERC>
+<PC_VAR_VS_VAST_BASIS_PERC>55.00</PC_VAR_VS_VAST_BASIS_PERC>
+<PC_TOTAL_PP/>
+<PC_TOTAL_OP_WIJZ>0</PC_TOTAL_OP_WIJZ>
+<PC_TOTAL_OP>1058.95</PC_TOTAL_OP>
+<PC_RISICOPROFIEL>004</PC_RISICOPROFIEL>
+<PC_HIGHLOW_JAREN>0</PC_HIGHLOW_JAREN>
+<PC_HIGHLOW_PERC>80</PC_HIGHLOW_PERC>
+<PC_HIGHLOW_CHG_DT>20180201</PC_HIGHLOW_CHG_DT>
+<PC_BENEF_START_DT>20180201</PC_BENEF_START_DT>
+<PC_1YR_AFTER_BENSTART_DT>20190201</PC_1YR_AFTER_BENSTART_DT>
+<PC_PAYMENT_START_DT>20190211</PC_PAYMENT_START_DT>
+</PC>
+<PO_VA_NAAM/>
+<PO_TOT_SN_KAP_BDR>260000.00</PO_TOT_SN_KAP_BDR>
+<PO_TOT_SA_KAP_BDR>0.00</PO_TOT_SA_KAP_BDR>
+<PO_TOT_KOSTEN_MIN_CB_BDR>7244.36</PO_TOT_KOSTEN_MIN_CB_BDR>
+<PO_TOT_KOSTEN_BDR>7244.36</PO_TOT_KOSTEN_BDR>
+<PO_TOT_KAP_MIN_KST_CB_BDR>252755.64</PO_TOT_KAP_MIN_KST_CB_BDR>
+<PO_TOT_KAP_MIN_KST_BELEG_BDR>113455.69</PO_TOT_KAP_MIN_KST_BELEG_BDR>
+<PO_TOT_KAP_MIN_KST_BDR>252471.28</PO_TOT_KAP_MIN_KST_BDR>
+<PO_TOT_KAP_MIN_KST_BASIS_BDR>139015.60</PO_TOT_KAP_MIN_KST_BASIS_BDR>
+<PO_TOT_KAP_BDR>260000.00</PO_TOT_KAP_BDR>
+<PO_TOT_KAPMINKSTCB_BEL_BDR>117000.00</PO_TOT_KAPMINKSTCB_BEL_BDR>
+<PO_TOT_KAPMINKSTCB_BAS_BDR>143000.00</PO_TOT_KAPMINKSTCB_BAS_BDR>
+<PO_START_DT>20180201</PO_START_DT>
+</PO>
+</DOCUMENT>

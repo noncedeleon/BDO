@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HelloServletTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-02-26T20:09:32" hostname="jensi.local" time="0.001">
+  <properties/>
+  <testcase name="doPostWithoutName" classname="HelloServletTest" time="0.0"/>
+  <testcase name="doGet" classname="HelloServletTest" time="0.001"/>
+  <testcase name="doPostWithName" classname="HelloServletTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

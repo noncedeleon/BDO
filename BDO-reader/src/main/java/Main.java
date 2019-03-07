@@ -15,27 +15,55 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Main {
 
-    public static void main (String args []){
+    public static void main (String args []) throws IOException, BiffException, WriteException {
+
+//        need to build in if system is windows or mac
+        String copyName = "BDOresults.xls";
+        String tab = "3P01";
+
+        WritableWorkbook copy = copyOriginal("BDOexpected.xls", copyName);
 
         ArrayList<String> processXMLs;
-
         processXMLs = xml_3P01();
-        firstExcel(processXMLs, 3, "BDOresults.xls","3P01");
+//
+//
+        firstExcel(processXMLs, 3, copyName,tab);
+        otherXMLs(processXMLs, 3, copy,tab);
 
-        processXMLs = xml_3P02();
-        otherXMLs(processXMLs, 3,"BDOresults.xls", "3P02");
+//        processXMLs = xml_3P02();
+//        otherXMLs(processXMLs, 3,"BDOresults.xls", "3P02");
 
-        processXMLs = xml_3P03o();
-        otherXMLs(processXMLs, 3,"BDOresults.xls", "3P03o");
+//        processXMLs = xml_3P03o();
+//        otherXMLs(processXMLs, 3,"BDOresults.xls", "3P03o");
+//
+//        processXMLs = xml_3P03p();
+//        otherXMLs(processXMLs, 3,"BDOresults.xls", "3P03p");
 
-        processXMLs = xml_3P03p();
-        otherXMLs(processXMLs, 3,"BDOresults.xls", "3P03p");
+//        closeResultExcel(copy);
+    }
+
+
+    public static ArrayList<String> xmls(String directoryPath) {
+
+        File dir = new File(directoryPath);
+        ArrayList<String> files = new ArrayList<>();
+
+        if (dir.isDirectory()) {
+            File[] listFiles = dir.listFiles();
+
+            if (listFiles != null) {
+                for (File file : listFiles) {
+                    if (file.isFile()) {
+                        files.add(file.getName());
+                    }
+                }
+            }
+        }
+        return files;
     }
 
     private static TreeMap<String, String> XMLreader(File xml) {
@@ -84,27 +112,29 @@ public class Main {
     }
 
     private static void firstExcel(ArrayList<String> xmls, int columnOffset,
-                                   String excelFile, String tabName) {
+                                   String excelFile, String tabName) throws IOException {
 
         TreeMap<String, String> xmlResults;
-        int columnOffsetIncrement = 5;
 
         String firstXML = "xmls/3P01/TC 1 - 3P01.xml";
 
-        String BDOexpected = "BDOexpected.xls";
-        String BDOresults = "BDOresults.xls";
+        String original = "BDOexpected.xls";
+        String copy = "BDOresults.xls";
+
+        WritableWorkbook BDOresults = copyOriginal(original, copy);
 
         xmlResults = XMLreader(new File(firstXML));
 
-        ExcelWriter(xmlResults, columnOffset, BDOexpected, BDOresults, tabName);
-//        columnOffset += columnOffsetIncrement;
+        ExcelWriter(xmlResults, columnOffset, BDOresults, tabName);
 
-        otherXMLs(xml_3P01(), 3, excelFile, tabName);
+        otherXMLs(xml_3P01(), 3, BDOresults, tabName);
 
     }
 
-    private static void otherXMLs(ArrayList<String> xmls, int columnOffset,
-                                  String excelFile, String tabName) {
+    private static void otherXMLs(ArrayList<String> xmls,
+                                  int columnOffset,
+                                  WritableWorkbook excelFile,
+                                  String tabName) {
 
         TreeMap<String, String> xmlResults;
 
@@ -112,13 +142,70 @@ public class Main {
 
         for (String xmlFile: xmls) {
             xmlResults = XMLreader(new File(xmlFile));
-            ExcelWriter(xmlResults, columnOffset, excelFile, excelFile, tabName);
+            ExcelWriter(xmlResults, columnOffset, excelFile, tabName);
             columnOffset += columnOffsetIncrement;
         }
     }
 
 //    Figure out how to enter a folder path for xmls and then loop over xml files
 //    to get ride of 4 below methods
+
+    private static void ExcelWriter(TreeMap<String, String> blocks,
+                                    int columnOffset,
+                                    WritableWorkbook writableWorkbook,
+                                    String tabName) {
+        try {
+//            Workbook workbook
+//                    = Workbook.getWorkbook(new File(originalFile));
+//
+//            WritableWorkbook newCopy
+//                    = Workbook.createWorkbook(new File(copyFile), workbook);
+
+            WritableSheet sheet = writableWorkbook.getSheet(tabName);
+
+            int cOffset = columnOffset;
+            int rowOffset = 5;
+
+            for (Map.Entry<String, String> entry : blocks.entrySet()) {
+                String block = entry.getKey();
+                String yesOrNo = entry.getValue();
+
+                Label blockLabel = new Label(cOffset, rowOffset, block);
+                sheet.addCell(blockLabel);
+                cOffset++;
+
+                Label yesOrNoLabel = new Label(cOffset, rowOffset, yesOrNo);
+                sheet.addCell(yesOrNoLabel);
+
+                cOffset--;
+                rowOffset++;
+            }
+            writableWorkbook.write();
+            writableWorkbook.close();
+
+        } catch (WriteException | IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static WritableWorkbook copyOriginal(String originalExcel,
+                                          String copyExcel) {
+        Workbook original = null;
+        WritableWorkbook copy = null;
+        try {
+            original
+                    = Workbook.getWorkbook(new File(originalExcel));
+            copy
+                    = Workbook.createWorkbook(new File(copyExcel), original);
+            copy.write();
+            copy.close();
+        } catch (IOException | BiffException | WriteException e) {
+            e.printStackTrace();
+        }
+        return copy;
+    }
+
+
 
     private static ArrayList<String> xml_3P01 () {
         ArrayList<String> xmls3P01 = new ArrayList<>();
@@ -169,46 +256,5 @@ public class Main {
         xmls3P03p.add("xmls/3P03p/TC 6 - 3P03p.xml");
 
         return xmls3P03p;
-    }
-
-    private static void ExcelWriter(TreeMap<String, String> blocks,
-                                    int columnOffset,
-                                    String originalFile,
-                                    String copyFile,
-                                    String tabName) {
-        try {
-            Workbook workbook
-                    = Workbook.getWorkbook(new File(originalFile));
-
-            WritableWorkbook newCopy
-                    = Workbook.createWorkbook(new File(copyFile), workbook);
-
-            WritableSheet sheet = newCopy.getSheet(tabName);
-
-            int cOffset = columnOffset;
-            int rowOffset = 5;
-
-            for (Map.Entry<String, String> entry : blocks.entrySet()) {
-                String block = entry.getKey();
-                String yesOrNo = entry.getValue();
-
-                Label blockLabel = new Label(cOffset, rowOffset, block);
-                sheet.addCell(blockLabel);
-                cOffset++;
-
-                Label yesOrNoLabel = new Label(cOffset, rowOffset, yesOrNo);
-                sheet.addCell(yesOrNoLabel);
-
-                cOffset--;
-                rowOffset++;
-            }
-
-            newCopy.write();
-            newCopy.close();
-            workbook.close();
-
-        } catch (WriteException | IOException | BiffException e) {
-            e.printStackTrace();
-        }
     }
 }

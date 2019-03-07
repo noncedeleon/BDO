@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DOCUMENT id="3P03DO">
+<Document_Sequence>1</Document_Sequence>
+<Document_UseForMailBody>N</Document_UseForMailBody>
+<Document_MailGrouping>100</Document_MailGrouping>
+<Document_UseColour>Y</Document_UseColour>
+-<textBlocks showID="Y">
+<textBlock id="10">Y</textBlock>
+<textBlock id="10.05">Y</textBlock>
+<textBlock id="10.10">Y</textBlock>
+<textBlock id="10.20">Y</textBlock>
+<textBlock id="10.20.10">N</textBlock>
+<textBlock id="10.20.20">Y</textBlock>
+<textBlock id="10.20.30">Y</textBlock>
+<textBlock id="10.30">Y</textBlock>
+<textBlock id="10.40">Y</textBlock>
+<textBlock id="10.40.05">Y</textBlock>
+<textBlock id="10.40.10">N</textBlock>
+<textBlock id="10.40.20">Y</textBlock>
+<textBlock id="10.40.30">Y</textBlock>
+<textBlock id="10.40.40">Y</textBlock>
+<textBlock id="10.40.40.02">Y</textBlock>
+<textBlock id="10.40.40.10">Y</textBlock>
+<textBlock id="10.40.40.20">Y</textBlock>
+<textBlock id="10.40.40.30">Y</textBlock>
+<textBlock id="10.40.40.40">N</textBlock>
+<textBlock id="10.40.40.45">Y</textBlock>
+<textBlock id="10.40.40.50">Y</textBlock>
+<textBlock id="10.40.50">Y</textBlock>
+<textBlock id="10.40.50.10">N</textBlock>
+<textBlock id="10.40.50.20">Y</textBlock>
+<textBlock id="10.40.60">Y</textBlock>
+<textBlock id="10.40.60.10">N</textBlock>
+<textBlock id="10.40.60.20">Y</textBlock>
+<textBlock id="10.40.70">Y</textBlock>
+<textBlock id="10.40.80">N</textBlock>
+<textBlock id="10.40.80.10">N</textBlock>
+<textBlock id="10.40.80.20">N</textBlock>
+<textBlock id="10.40.80.30">N</textBlock>
+<textBlock id="10.50">Y</textBlock>
+<textBlock id="20">Y</textBlock>
+<textBlock id="20.10">Y</textBlock>
+<textBlock id="20.10.10">Y</textBlock>
+<textBlock id="20.10.20">Y</textBlock>
+<textBlock id="20.20">Y</textBlock>
+<textBlock id="20.20.10">Y</textBlock>
+<textBlock id="20.20.20">Y</textBlock>
+<textBlock id="20.20.30">Y</textBlock>
+<textBlock id="20.40">N</textBlock>
+<textBlock id="20.40.02">N</textBlock>
+<textBlock id="20.40.02.10">N</textBlock>
+<textBlock id="20.40.02.20">N</textBlock>
+<textBlock id="20.40.02.30">N</textBlock>
+<textBlock id="20.40.02.40">N</textBlock>
+<textBlock id="20.40.02.50">N</textBlock>
+<textBlock id="20.40.02.60">N</textBlock>
+<textBlock id="20.40.10">N</textBlock>
+<textBlock id="20.50">Y</textBlock>
+<textBlock id="20.50.10">Y</textBlock>
+<textBlock id="20.50.20">N</textBlock>
+<textBlock id="20.70">Y</textBlock>
+<textBlock id="30">Y</textBlock>
+<textBlock id="30.05.10">Y</textBlock>
+<textBlock id="30.05.20">Y</textBlock>
+<textBlock id="30.05.20.10">N</textBlock>
+<textBlock id="30.05.30">Y</textBlock>
+<textBlock id="30.05.40">Y</textBlock>
+<textBlock id="30.10">Y</textBlock>
+<textBlock id="30.20">Y</textBlock>
+<textBlock id="30.30">N</textBlock>
+<textBlock id="30.40.10">Y</textBlock>
+<textBlock id="30.40.20">N</textBlock>
+<textBlock id="30.40.30">Y</textBlock>
+<textBlock id="30.40.40">Y</textBlock>
+<textBlock id="30.50">Y</textBlock>
+<textBlock id="30.50.10">Y</textBlock>
+<textBlock id="30.50.20">Y</textBlock>
+<textBlock id="30.50.30">Y</textBlock>
+<textBlock id="30.50.40">Y</textBlock>
+<textBlock id="30.50.50">Y</textBlock>
+<textBlock id="30.60">Y</textBlock>
+<textBlock id="40">Y</textBlock>
+<textBlock id="40.10">Y</textBlock>
+<textBlock id="40.10.10">N</textBlock>
+<textBlock id="40.10.20">Y</textBlock>
+<textBlock id="40.10.30">N</textBlock>
+<textBlock id="40.10.40">N</textBlock>
+<textBlock id="40.10.50">Y</textBlock>
+<textBlock id="40.15">Y</textBlock>
+<textBlock id="40.20">Y</textBlock>
+<textBlock id="40.20.10">N</textBlock>
+<textBlock id="40.20.20">Y</textBlock>
+<textBlock id="40.20.30">N</textBlock>
+<textBlock id="40.20.40">N</textBlock>
+<textBlock id="40.20.50">Y</textBlock>
+<textBlock id="40.25">Y</textBlock>
+<textBlock id="40.30">Y</textBlock>
+<textBlock id="40.30.10">N</textBlock>
+<textBlock id="40.30.20">Y</textBlock>
+<textBlock id="40.30.30">N</textBlock>
+<textBlock id="40.30.40">N</textBlock>
+<textBlock id="40.30.50">Y</textBlock>
+<textBlock id="40.35">Y</textBlock>
+<textBlock id="40.40">Y</textBlock>
+<textBlock id="40.40.10">N</textBlock>
+<textBlock id="40.40.20">Y</textBlock>
+<textBlock id="40.40.30">Y</textBlock>
+<textBlock id="40.5">Y</textBlock>
+<textBlock id="40.90">Y</textBlock>
+<textBlock id="5.10">Y</textBlock>
+<textBlock id="5.20">Y</textBlock>
+<textBlock id="50">Y</textBlock>
+<textBlock id="50.30">Y</textBlock>
+<textBlock id="50.40">Y</textBlock>
+<textBlock id="50.40.10">N</textBlock>
+<textBlock id="50.40.20">Y</textBlock>
+<textBlock id="50.40.30">Y</textBlock>
+<textBlock id="50.40.35">Y</textBlock>
+<textBlock id="50.40.40">Y</textBlock>
+<textBlock id="50.40.40.10">N</textBlock>
+<textBlock id="50.40.40.20">Y</textBlock>
+<textBlock id="50.50">Y</textBlock>
+<textBlock id="50.60">Y</textBlock>
+<textBlock id="50.60.10">N</textBlock>
+<textBlock id="50.60.15">Y</textBlock>
+<textBlock id="50.60.20">Y</textBlock>
+<textBlock id="50.60.20.10">N</textBlock>
+<textBlock id="50.60.20.20">Y</textBlock>
+<textBlock id="50.70">Y</textBlock>
+<textBlock id="50.80">N</textBlock>
+<textBlock id="50.90">Y</textBlock>
+<textBlock id="60">Y</textBlock>
+<textBlock id="60.10">Y</textBlock>
+<textBlock id="60.20">N</textBlock>
+<textBlock id="60.30">Y</textBlock>
+<textBlock id="60.40">Y</textBlock>
+<textBlock id="60.50">Y</textBlock>
+</textBlocks>
+-<NN desc="NN fields">
+<NN_VERZEND_HUISNR_TOEV_CP2/>
+<NN_VERZEND_LANDCODE>NL</NN_VERZEND_LANDCODE>
+<NN_VERZEND_LANDCODE_CP1/>
+<NN_VERZEND_LANDCODE_CP2/>
+<NN_VERZEND_LANDNAAM>Nederland</NN_VERZEND_LANDNAAM>
+<NN_VERZEND_LANDNAAM_CP1>Nederland</NN_VERZEND_LANDNAAM_CP1>
+<NN_VERZEND_LANDNAAM_CP2>Nederland</NN_VERZEND_LANDNAAM_CP2>
+<NN_VERZEND_LOKATIE_CP1/>
+<NN_VERZEND_LOKATIE_CP2/>
+<NN_VERZEND_ORGANISATIE_NM/>
+<NN_VERZEND_ORGANISA_NM_CP1/>
+<NN_VERZEND_ORGANISA_NM_CP2/>
+<NN_VERZEND_POSTBUS/>
+<NN_VERZEND_POSTBUS_CP1/>
+<NN_VERZEND_POSTBUS_CP2/>
+<NN_VERZEND_POSTCD>3013 AL</NN_VERZEND_POSTCD>
+<NN_VERZEND_POSTCD_CP1/>
+<NN_VERZEND_POSTCD_CP2/>
+<NN_VERZEND_STRAATNAAM>Weena</NN_VERZEND_STRAATNAAM>
+<NN_VERZEND_STRAATNM_CP1/>
+<NN_VERZEND_STRAATNM_CP2/>
+<NN_VERZEND_TUSSENVGSL>de</NN_VERZEND_TUSSENVGSL>
+<NN_VERZEND_TUSSENVGSL_CP1/>
+<NN_VERZEND_TUSSENVGSL_CP2/>
+<NN_VERZEND_VOORNAAM/>
+<NN_VERZEND_VOORNAAM_CP1/>
+<NN_VERZEND_VOORNAAM_CP2/>
+<NN_VERZEND_VRLTTR>P.P.P.</NN_VERZEND_VRLTTR>
+<NN_VERZEND_VRLTTR_CP1/>
+<NN_VERZEND_VRLTTR_CP2/>
+<NN_VERZEND_WNPLTS>Rotterdam</NN_VERZEND_WNPLTS>
+<NN_VERZEND_WNPLTS_CP1/>
+<NN_VERZEND_WNPLTS_CP2/>
+<NN_ZOEKVA_WEBSITE/>
+<NN_VERZEND_HUISNR_TOEV_CP1/>
+<NN_AFD_NAAM>Nationale-Nederlanden Leven</NN_AFD_NAAM>
+<NN_ANTWOORDNR_ADR_NR>21</NN_ANTWOORDNR_ADR_NR>
+<NN_ANTWOORDNR_ADR_POSTCD>3000 VB</NN_ANTWOORDNR_ADR_POSTCD>
+<NN_ANTWOORDNR_ADR_WNPLTS>Rotterdam</NN_ANTWOORDNR_ADR_WNPLTS>
+<NN_BEHANDELAAR>TOSCATESTDIP</NN_BEHANDELAAR>
+<NN_BEZ_ADR_HUISNR>505</NN_BEZ_ADR_HUISNR>
+<NN_BEZ_ADR_HUISNR_TOEV/>
+<NN_BEZ_ADR_LOKAT/>
+<NN_BEZ_ADR_STRAATNAAM>Weena</NN_BEZ_ADR_STRAATNAAM>
+<NN_BEZ_ADR_WNPLTS>ROTTERDAM</NN_BEZ_ADR_WNPLTS>
+<NN_BP_ID>503892747</NN_BP_ID>
+<NN_EMAIL>pensioenuitkering@nn.nl</NN_EMAIL>
+<NN_GENEREER_DATUM>20190211</NN_GENEREER_DATUM>
+<NN_ONDERTEKENAAR_CD>NNDP_Directeur_Commercie</NN_ONDERTEKENAAR_CD>
+<NN_ONDERWERP>Uw Persoonlijke Pensioenuitkering Appendix</NN_ONDERWERP>
+<NN_ORVDIL_WEBSITE/>
+<NN_POST_ADR_HUISNR>505</NN_POST_ADR_HUISNR>
+<NN_POST_ADR_STRAATNAAM>Weena</NN_POST_ADR_STRAATNAAM>
+<NN_PROCES_ID>666643</NN_PROCES_ID>
+<NN_RECHTSPERSOON>Persoonlijke Pensioenuitkering</NN_RECHTSPERSOON>
+<NN_TEAM_LOCATIE>DP 1.13.069</NN_TEAM_LOCATIE>
+<NN_TEAM_NAAM>Team Persoonlijke Pensioenuitkering</NN_TEAM_NAAM>
+<NN_TELNR>010 513 01 05</NN_TELNR>
+<NN_VERZEND_ACHTERNAAM>Main_REG_NN3P_TC6</NN_VERZEND_ACHTERNAAM>
+<NN_VERZEND_ACHTERNAAM_CP1/>
+<NN_VERZEND_ACHTERNAAM_CP2/>
+<NN_VERZEND_GESLACHT>M</NN_VERZEND_GESLACHT>
+<NN_VERZEND_GESLACHT_CP1/>
+<NN_VERZEND_GESLACHT_CP2/>
+<NN_VERZEND_HUISNR>505</NN_VERZEND_HUISNR>
+<NN_VERZEND_HUISNR_CP1/>
+<NN_VERZEND_HUISNR_CP2/>
+<NN_VERZEND_HUISNR_TOEV/>
+</NN>
+-<OF desc="Offer">
+<OF_NUMMER>AP-058679</OF_NUMMER>
+</OF>
+-<PE id="0000000001" desc="Person" PO_ref="00000000000000001">
+<PE_LEAD_ACHTERNAAM>Main_REG_NN3P_TC6</PE_LEAD_ACHTERNAAM>
+</PE>
+-<PO id="00000000000000001" desc="Policy" PE_ref="0000000001">
+-<PC id="1" desc="Policy Contract">
+<PC_EXCHANGE_PERC>0.00</PC_EXCHANGE_PERC>
+<PC_HIGHLOW_JAREN>1</PC_HIGHLOW_JAREN>
+<PC_HIGHLOW_PERC>80</PC_HIGHLOW_PERC>
+<PC_SERVICEFEE_PERC>0.10000</PC_SERVICEFEE_PERC>
+<PC_SWITCHKOSTEN_IN>3.58000</PC_SWITCHKOSTEN_IN>
+<PC_SWITCHKOSTEN_UIT>2.50000</PC_SWITCHKOSTEN_UIT>
+<PC_VERKOOPKOSTEN_PERC>0.25000</PC_VERKOOPKOSTEN_PERC>
+</PC>
+<PO_LOPENDEKST_PERC>0.35</PO_LOPENDEKST_PERC>
+<PO_STERFTETAFEL_JAAR>2017</PO_STERFTETAFEL_JAAR>
+</PO>
+</DOCUMENT>
