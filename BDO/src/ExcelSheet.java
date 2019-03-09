@@ -4,39 +4,89 @@ import jxl.write.Label;
 import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
-import jxl.write.biff.RowsExceededException;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-import org.xml.sax.SAXParseException;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class ExcelSheet {
 
-    String excelMaster;
-    String excelCopy;
-    String rootBDOdirectory;
+    private FileFinder fileFinder;
+    private String excelMaster;
+    private String excelCopy;
+    private int columnInitial;
+    private int rowOffset;
+    private int columnIterator;
+    private String element;
+    private String attribute;
+    private Map<String, String> tabNames;
 
-    int numberOfXmlsPerBDO;
-
-    public ExcelSheet(String excelMaster, String excelCopy, String rootBDOdirectory) {
+    ExcelSheet(FileFinder fileFinder, String excelMaster, String excelCopy) {
+        this.fileFinder = fileFinder;
         this.excelMaster = excelMaster;
         this.excelCopy = excelCopy;
-        this.rootBDOdirectory = rootBDOdirectory;
+        this.columnInitial = 3;
+        this.rowOffset = 5;
+        this.columnIterator = 5;
+        this.element = "textBlock";
+        this.attribute = "id";
+        this.tabNames = new TreeMap<>();
     }
 
-    public WritableWorkbook createCopy(String excelMaster, String excelCopy) {
+    public void setColumnInitial(int columnInitial) {
+        this.columnInitial = columnInitial;
+    }
+
+    public int getColumnInitial() {
+        return columnInitial;
+    }
+
+    public void setRowOffset(int rowOffset) {
+        this.rowOffset = rowOffset;
+    }
+
+    public int getRowOffset() {
+        return rowOffset;
+    }
+
+    public void setColumnIterator(int columnIterator) {
+        this.columnIterator = columnIterator;
+    }
+
+    public int getColumnIterator() {
+        return columnIterator;
+    }
+
+    public void setElement(String element) {
+        this.element = element;
+    }
+
+    public String getElement() {
+        return element;
+    }
+
+    public void setAttribute(String attribute) {
+        this.attribute = attribute;
+    }
+
+    public String getAttribute() {
+        return attribute;
+    }
+
+    public String getExcelCopy() {
+        return excelCopy;
+    }
+
+    public String getExcelMaster() {
+        return excelMaster;
+    }
+
+
+    WritableWorkbook createCopy(String excelMaster, String excelCopy) {
         Workbook original;
         WritableWorkbook copy = null;
         try {
@@ -48,161 +98,69 @@ public class ExcelSheet {
         return copy;
     }
 
-    // xmlFileName == full path name
-    // Gets BDO directory filepaths
-    public ArrayList<String> getBdoDirectoryFilePaths(String directory) {
-        File filePath = new File(directory);
-        ArrayList<String> directoryList = new ArrayList<>();
-
-        if (filePath.isDirectory()) {
-            File[] directoryFileList = filePath.listFiles();
-            for (File file : directoryFileList) {
-                if (!file.isHidden()) {
-                    directoryList.add(file.getAbsolutePath());
-                }
-            }
-        }
-        Collections.sort(directoryList);
-        return directoryList;
+    FileFinder getFileFinder() {
+        return fileFinder;
     }
 
-
-    public TreeMap<String, TreeMap<String, String>>
-        xmlsInBdo(TreeMap<String, TreeMap<String, String>> xmlDirectory, String bdo) {
-
-        TreeMap<String, TreeMap<String, String>> bdoDirectory = new TreeMap<>();
-
-        for (String s : xmlDirectory.keySet()) {
-            TreeMap<String, String> xmls;
-            Path xml = Paths.get(s);
-            String bdoString = xml.getName(xml.getNameCount() - 2).toString();
-
-            // 3P01 == ../../..3P01/...xml
-            if (bdo.equals(bdoString)) {
-                xmls = xmlDirectory.get(s);
-                bdoDirectory.put(s, xmls);
-            }
+    void setTabNames() {
+        for (String subDirectory : fileFinder.getSubDirectories()) {
+            Path path = Paths.get(subDirectory);
+            tabNames.put(subDirectory, path.getName(path.getNameCount() - 1).toString());
         }
-        return bdoDirectory;
     }
 
-    public Set<String> getTabNamesFromXmlTreeMap(TreeMap<String, TreeMap<String, String>> xmlDirectory) {
-        Set<String> files = xmlDirectory.keySet();
-        Set<String> bdoDirectories = new TreeSet<>();
+    private void writeColumn(WritableWorkbook results,
+                             TreeMap<String, String> xml,
+                             String tabName) {
 
-        for (String s : files) {
-            Path p = Paths.get(s);
-            bdoDirectories.add(p.getName(p.getNameCount() - 2).toString());
-        }
-        return bdoDirectories;
-    }
-
-    public void writeSheet(WritableWorkbook results,
-                           TreeMap<String, TreeMap<String, String>> xmlsInDirectory,
-                           String bdoDirectory) {
-
-        TreeMap<String, TreeMap<String, String>> xmlsPerBdo
-                = xmlsInBdo(xmlsInDirectory, bdoDirectory);
-
-        int columnInitial = 3;
-        int columnIterator = 5;
-        int rowOffset = 5;
-
+        WritableSheet sheet = results.getSheet(tabName);
         try {
-            // this loop does all the columns
-            WritableSheet sheet = results.getSheet(bdoDirectory);
+            for (Map.Entry<String, String> entry : xml.entrySet()) {
+                String textBlock = entry.getKey();
+                String yesOrNo = entry.getValue();
 
-            for(String s : xmlsPerBdo.keySet()) {
-                TreeMap<String, String> blocks;
-                blocks = xmlsPerBdo.get(s);
-                for (String textBlock : blocks.keySet()) {
-                    String yesOrNo = blocks.get(textBlock);
+                Label textBlockNumber = new Label(columnInitial, rowOffset, textBlock);
+                sheet.addCell(textBlockNumber);
+                columnInitial++;
 
-                    Label textBlockNumber = new Label(columnInitial, rowOffset, textBlock);
-                    sheet.addCell(textBlockNumber);
-                    columnInitial++;
-
-                    Label yesOrNoLabel = new Label(columnInitial, rowOffset, yesOrNo);
-                    sheet.addCell(yesOrNoLabel);
-                    columnInitial--;
-
-                    rowOffset++;
-                }
-                columnInitial += columnIterator;
-                rowOffset -= blocks.size();
+                Label yesOrNoLabel = new Label(columnInitial, rowOffset, yesOrNo);
+                sheet.addCell(yesOrNoLabel);
+                columnInitial--;
+                rowOffset++;
             }
-
         } catch (WriteException e) {
             e.printStackTrace();
         }
     }
 
+    void writeWorkbook(WritableWorkbook results) {
 
-    public void fillOutputSpreadsheet(WritableWorkbook outputSpreadsheet,
-                                      TreeMap<String, TreeMap<String, String>> xmlTextBlocks) {
+        for (String tabName : tabNames.keySet()) {
+            TreeMap<String, String> xml;
 
-        Set<String> bdoDirectories = getTabNamesFromXmlTreeMap(xmlTextBlocks);
-        // returns 4 - one for each tab
-        for (String bdo : bdoDirectories) {
+            FileFinder temp = new FileFinder(tabName);
+            temp.setSubDirectories(temp.getRootDirectory());
+            ArrayList<String> xmls = temp.getSubDirectories();
 
-            TreeMap<String, TreeMap<String, String>> xmlsInBdo = xmlsInBdo(xmlTextBlocks, bdo);
-
-            writeSheet(outputSpreadsheet, xmlTextBlocks, bdo);
+            int columns = 0;
+            for (String file : xmls) {
+                Xml testCase = new Xml(file, element, attribute);
+                testCase.mapXmlTextBlocks();
+                xml = testCase.getXmlMappedTextBlocks();
+                writeColumn(results, xml, tabNames.get(tabName));
+                rowOffset -= xml.size();
+                columnInitial += columnIterator;
+                columns++;
+            }
+            columnInitial -= columns * columnIterator;
+        }
+        try {
+            results.write();
+            results.close();
+            System.out.println("Results spreadsheet written with xml comparison data");
+        } catch (IOException | WriteException e) {
+            e.printStackTrace();
         }
     }
 
-
-    // ERRORS
-
-    public String getTabNameFromFilePathForErrorReporting(String xmlDirectory) {
-        Path p = Paths.get(xmlDirectory);
-        return p.getName(p.getNameCount() - 1).toString();
-    }
 }
-
-//    public TreeMap<String, TreeMap> errorsInWorkbook(WritableWorkbook results,
-//                                                     ArrayList<String> xmlsInDirectory) {
-//
-//        TreeMap<String, TreeMap> errorsPerBDO = new TreeMap<>();
-//
-////        xmlsInBdo(xmlsInDirectory.get(0));
-//
-//
-//        for (String bdoDirectories : xmlsInDirectory) {
-//
-//            String filePath = bdoDirectories;
-//            String tabName = getTabNameFromFilePathForErrorReporting(filePath);
-//            System.out.println(tabName);
-//            WritableSheet sheet = results.getSheet(tabName);
-//
-//            TreeMap<String, TreeMap> errorsPerSheet = new TreeMap<>();
-//
-//            int column = 5;
-//            int row = 1;
-//            int columnIncrementor = 5;
-//            int rowIncrementor = 1;
-//
-//            TreeMap<String, String> errorsPerTestCase= new TreeMap<>();
-//
-//            for (int i = 0; i < numberOfXmlsPerBDO; i++) {
-//
-//                String testCase = sheet.getCell(column, row).getContents();
-//                row += rowIncrementor;
-//
-//                String errors = sheet.getCell(column, row).getContents();
-//                errorsPerTestCase.put(testCase, errors);
-//
-//                row -= rowIncrementor;
-//                column += columnIncrementor;
-//                errorsPerSheet.put(tabName, errorsPerTestCase);
-//            }
-//            errorsPerBDO.put(bdoDirectories, errorsPerTestCase);
-//        }
-//        return errorsPerBDO;
-//    }
-//
-//    public void printErrors(TreeMap<String, TreeMap> errorsInWorkbook) {
-//        for (Map.Entry<String, TreeMap> string : errorsInWorkbook.entrySet()) {
-//            System.out.println(string);
-//        }
-//    }
