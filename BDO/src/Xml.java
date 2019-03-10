@@ -66,8 +66,8 @@ public class Xml {
             if (firstTextBlock.getNodeType() == Node.ELEMENT_NODE) {
                 Element textBlockElement = (Element) firstTextBlock;
                 String number = textBlockElement.getAttribute(attributeName);
-                String a = firstTextBlock.getTextContent();
-                xmlMappedTextBlocks.put(number, a);
+                String yesOrNo = firstTextBlock.getTextContent();
+                xmlMappedTextBlocks.put(number, yesOrNo);
             }
         }
     }

@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="110f69e4-5b45-46c4-b075-6b8dd461f1ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FileFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/XMLComparer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BDO-reader/BDOexpected.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../BDO-reader/BDOexpected.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BDO/ExcelSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BDO/ExcelSheet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BDO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BDO/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BDO/XmlReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExcelSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExcelSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BDO/XMLComparer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BDO/XMLComparer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XmlReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Xml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XMLComparer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/XmlComparer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Xml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Xml.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gradle-build-scan-quickstart" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle-build-scan-quickstart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,42 +33,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/XmlComparer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FileFinder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="234">
+              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#setSubDirectories#0;class#DirectoryParser#0" />
-                <element signature="e#1628#1666#1" />
-                <element signature="e#1068#1069#0" expanded="true" />
-                <element signature="method#setAllFilePaths#0;class#FileFinder#0" />
+                <element signature="method#directoriesAreEqual#0;class#XMLComparer#0" />
+                <element signature="method#xmlAttributesAreEqual#0;class#XmlComparer#0" />
+                <element signature="method#xmlsInBdo#0;class#XMLComparer#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ExcelSheet.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="-9">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#createCopy#0;class#ExcelSheet#0" />
-                <element signature="method#setTabNames#0;class#ExcelSheet#0" />
-                <element signature="e#3530#4593#0" />
-                <element signature="method#writeWorkbook#0;class#ExcelSheet#0" />
               </folding>
             </state>
           </provider>
@@ -80,14 +63,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Xml.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state relative-caret-position="345">
+              <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#convertXmlToDocument#0;class#Xml#0" />
                 <element signature="method#mapXmlTextBlocks#0;class#Xml#0" />
-                <element signature="e#2428#2429#0" expanded="true" />
-                <element signature="e#2470#2471#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FileFinder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1031#1032#0" expanded="true" />
+                <element signature="e#1068#1069#0" expanded="true" />
+                <element signature="method#setAllFilePaths#0;class#FileFinder#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ExcelSheet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1041">
+              <caret line="164" selection-start-line="164" selection-end-line="164" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#createCopy#0;class#ExcelSheet#0" />
+                <element signature="method#setTabNames#0;class#ExcelSheet#0" />
+                <element signature="method#writeWorkbook#0;class#ExcelSheet#0" />
               </folding>
             </state>
           </provider>
@@ -141,16 +152,17 @@
         <option value="$PROJECT_DIR$/test/WorkbookTest.java" />
         <option value="$PROJECT_DIR$/src/XML.java" />
         <option value="$PROJECT_DIR$/src/xmlReader.java" />
-        <option value="$PROJECT_DIR$/src/XMLComparer.java" />
         <option value="$PROJECT_DIR$/src/XmlReader.java" />
         <option value="$PROJECT_DIR$/src/XmlRead.java" />
         <option value="$PROJECT_DIR$/src/DirectoryParser.java" />
         <option value="$PROJECT_DIR$/src/DirectoryAndFileFinder.java" />
         <option value="$PROJECT_DIR$/src/XmlPackager.java" />
-        <option value="$PROJECT_DIR$/src/Xml.java" />
         <option value="$PROJECT_DIR$/src/FileFinder.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/ExcelSheet.java" />
+        <option value="$PROJECT_DIR$/src/XMLComparer.java" />
+        <option value="$PROJECT_DIR$/src/XmlComparer.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Xml.java" />
       </list>
     </option>
   </component>
@@ -166,8 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,13 +194,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552162917044" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552162920160" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.23066103" />
@@ -338,7 +350,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32833788" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2574932" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2574932" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39918256" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -347,7 +359,6 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32833788" />
-      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -356,6 +367,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven" order="8" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.235012" />
@@ -385,18 +397,6 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout-to-restore>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/XMLComparer.java</url>
-          <line>62</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
@@ -546,16 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/WorkbookTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/rt.jar!/jdk/xml/internal/SecuritySupport.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -576,29 +566,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/XMLComparer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#846#847#0" expanded="true" />
-            <element signature="method#xmlsInBdo#0;class#XMLComparer#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/XmlPackager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/XmlPackager.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/rt.jar!/jdk/xml/internal/JdkXmlUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -650,51 +618,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/test/WorkbookTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+        <state relative-caret-position="90">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FileFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="90">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#setSubDirectories#0;class#DirectoryParser#0" />
-            <element signature="e#1628#1666#1" />
+            <element signature="e#1031#1032#0" expanded="true" />
             <element signature="e#1068#1069#0" expanded="true" />
             <element signature="method#setAllFilePaths#0;class#FileFinder#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Xml.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#convertXmlToDocument#0;class#Xml#0" />
-            <element signature="method#mapXmlTextBlocks#0;class#Xml#0" />
-            <element signature="e#2428#2429#0" expanded="true" />
-            <element signature="e#2470#2471#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ExcelSheet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="1041">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createCopy#0;class#ExcelSheet#0" />
             <element signature="method#setTabNames#0;class#ExcelSheet#0" />
-            <element signature="e#3530#4593#0" />
             <element signature="method#writeWorkbook#0;class#ExcelSheet#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Xml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#convertXmlToDocument#0;class#Xml#0" />
+            <element signature="method#mapXmlTextBlocks#0;class#Xml#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/XmlComparer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#directoriesAreEqual#0;class#XMLComparer#0" />
+            <element signature="method#xmlAttributesAreEqual#0;class#XmlComparer#0" />
+            <element signature="method#xmlsInBdo#0;class#XMLComparer#0" />
           </folding>
         </state>
       </provider>

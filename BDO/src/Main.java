@@ -1,5 +1,7 @@
 import jxl.write.WritableWorkbook;
 
+import java.util.TreeMap;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -24,62 +26,38 @@ public class Main {
         scanner.close();*/
 
         // Excel
-        String excelMasterFilepath     = "/users/jensen/Desktop/BDOs/BDOexpected.xls";
-        String excelResultsFilepath    = "/users/jensen/Desktop/BDOs/BDOresults.xls";
-        String rootBDOdirectory        = "/users/jensen/Desktop/BDOs/xmls";
-        String element                 = "textBlock";
-        String attribute               = "id";
-        int columnInitial              = 3;
 
 
-        // Make a fileFinder outside of Excel --> to pass to spreadsheet
-        FileFinder fileFinder = new FileFinder(rootBDOdirectory);
-        fileFinder.setRootDirectory(rootBDOdirectory);
+//        bdoWriter();
 
-        ExcelSheet resultsWorkbook
-                = new ExcelSheet(fileFinder, excelMasterFilepath, excelResultsFilepath);
+//        Xml Comparator
 
-        WritableWorkbook excelCopy
-                = resultsWorkbook.createCopy(excelMasterFilepath, excelResultsFilepath);
 
-//        Which is better??
-        String rootDirectory = fileFinder.getRootDirectory();                           // Through file finder object
-//        String rootDirectory = resultsWorkbook.getFileFinder().getRootDirectory();    // Through workbook
-        fileFinder.setSubDirectories(rootDirectory);                                    // Through file finder object
-//        resultsWorkbook.getFileFinder().setSubDirectories(rootDirectory);             // Through workbook
+        String element = "textBlock";
+        String attribute = "id";
 
-        resultsWorkbook.setTabNames();
-        resultsWorkbook.writeWorkbook(excelCopy);
-    }
+        String rootBDOTestOneDirectory
+                = "/users/jensen/Desktop/BDOs/xmlTestOne/xmlOne/3P01/TC 1 - 3P01.xml";
+        Xml one = new Xml(rootBDOTestOneDirectory, element, attribute);
+        one.mapXmlTextBlocks();
+        TreeMap<String, String> xmlOne = one.getXmlMappedTextBlocks();
+//        System.out.println("one = " + xmlOne);
 
-        /*Xml Comparator
+        String rootBDOTestTwoDirectory
+                = "/users/jensen/Desktop/BDOs/xmlTestTwo/xmlTwo/3P01/TC 1 - 3P01.xml";
+        Xml two = new Xml(rootBDOTestTwoDirectory, element, attribute);
 
-        String rootTestDirectoryOne        = "/users/jensen/Desktop/BDOs/xmlTestOne";
-        String rootTestDirectoryTwo        = "/users/jensen/Desktop/BDOs/xmlTestTwo";
+        two.mapXmlTextBlocks();
+        TreeMap<String, String> xmlTwo = two.getXmlMappedTextBlocks();
+//        System.out.println("two = " + xmlTwo);
 
-        Xml xmlOne = new Xml(rootTestDirectoryOne, element, attribute);
-        String rootBDOTestOneDirectory        = "/users/jensen/Desktop/BDOs/xmlTestOne/xmlOne";
+        XmlComparer xmlComparer = new XmlComparer(xmlOne, xmlTwo);
 
-        Xml xmlTwo = new Xml(rootTestDirectoryTwo, element, attribute);
-        String rootBDOTestTwoDirectory        = "/users/jensen/Desktop/BDOs/xmlTestTwo/xmlTwo";
 
-        xmlOne.setSubDirectories();
-        xmlOne.setAllFilePaths();
-        xmlOne.mapAllXmlTextBlocks(rootBDOTestOneDirectory);
-
-//      xmlTwo.setSubDirectories();
-//        xmlTwo.setAllFilePaths();
-        xmlTwo.mapAllXmlTextBlocks(rootBDOTestTwoDirectory);
-
-        XMLComparer xmlComparer = new XMLComparer(
-                xmlOne.getMappedTextBlocks(),
-                xmlTwo.getMappedTextBlocks());
-
-        System.out.println(xmlComparer.directoriesAreEqual());
-        xmlComparer.setXmlDirectories();
+        System.out.println("Elements are equal: " + xmlComparer.xmlElementsAreEqual());
+        System.out.println("Attribute are equal: " + xmlComparer.xmlAttributesAreEqual());
+//        xmlComparer.setXmlDirectories();
 //        System.out.println(xmlComparer.getXmlDirectories());
-        xmlComparer.compareXMLs();
-        */
 
 
        /* XML Test
@@ -114,4 +92,32 @@ public class Main {
 //        System.out.println(allFilePaths);
 
 */
+    }
+
+    private static void bdoWriter() {
+        String excelMasterFilepath = "/users/jensen/Desktop/BDOs/BDOexpected.xls";
+        String excelResultsFilepath = "/users/jensen/Desktop/BDOs/BDOresults.xls";
+        String rootBDOdirectory = "/users/jensen/Desktop/BDOs/xmls";
+        int columnInitial = 3;
+
+
+        // Make a fileFinder outside of Excel --> to pass to spreadsheet
+        FileFinder fileFinder = new FileFinder(rootBDOdirectory);
+        fileFinder.setRootDirectory(rootBDOdirectory);
+
+        ExcelSheet resultsWorkbook
+                = new ExcelSheet(fileFinder, excelMasterFilepath, excelResultsFilepath);
+
+        WritableWorkbook excelCopy
+                = resultsWorkbook.createCopy(excelMasterFilepath, excelResultsFilepath);
+
+//        Which is better??
+        String rootDirectory = fileFinder.getRootDirectory();                           // Through file finder object
+//        String rootDirectory = resultsWorkbook.getFileFinder().getRootDirectory();    // Through workbook
+        fileFinder.setSubDirectories(rootDirectory);                                    // Through file finder object
+//        resultsWorkbook.getFileFinder().setSubDirectories(rootDirectory);             // Through workbook
+
+        resultsWorkbook.setTabNames();
+        resultsWorkbook.writeWorkbook(excelCopy);
+    }
 }
