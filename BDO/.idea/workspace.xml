@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="110f69e4-5b45-46c4-b075-6b8dd461f1ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/BdoXmlComp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/BdoXmlCompTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/DirectoryNavigatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/XmlComparerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/XmlTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BDO-reader/BDOexpected.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../BDO-reader/BDOexpected.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BDO/ExcelSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BDO/ExcelSheet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BDO/FileFinder.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BDO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BDO/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BDO/XMLComparer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BDO/XMLComparer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BDO/Xml.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BDO/Xml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/BDO/WorkbookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/BDO/WorkbookTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExcelSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExcelSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DirectoryNavigator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XMLComparer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/XmlComparer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Xml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Xml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XmlComparer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/XmlComparer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/WorkbookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/WorkbookTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gradle-build-scan-quickstart" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle-build-scan-quickstart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,10 +33,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/WorkbookTest.java">
+        <entry file="file://$PROJECT_DIR$/test/BdoXmlCompTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="139">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,15 +45,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/XmlComparer.java">
+        <entry file="file://$PROJECT_DIR$/src/BdoXmlComp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+            <state relative-caret-position="444">
+              <caret line="58" column="53" lean-forward="true" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#directoriesAreEqual#0;class#XMLComparer#0" />
-                <element signature="method#xmlAttributesAreEqual#0;class#XmlComparer#0" />
-                <element signature="method#xmlsInBdo#0;class#XMLComparer#0" />
+                <element signature="method#BdoXmlComp#0;class#BdoXmlComp#0" />
+                <element signature="method#setTemplateXmlFilepathsMappedToResultsXmlFilepaths#0;class#BdoXmlComp#0" />
+                <element signature="method#getTemplateXmlFilepathsMappedToResultsXmlFilepaths#0;class#BdoXmlComp#0" />
               </folding>
             </state>
           </provider>
@@ -51,10 +62,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="315">
+              <caret line="78" column="46" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#bdoWriter#0;class#Main#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DirectoryNavigator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#DirectoryNavigator#0;class#DirectoryNavigator#0" />
+                <element signature="method#setSubDirectories#0;class#DirectoryNavigator#0" />
+                <element signature="method#setSubDirectoryNames#0;class#DirectoryNavigator#0" />
+                <element signature="method#setAllFilePaths#0;class#DirectoryNavigator#0" />
+                <element signature="e#2353#2354#0" expanded="true" />
+                <element signature="e#2388#2389#0" expanded="true" />
+                <element signature="method#setAllFileNames#0;class#DirectoryNavigator#0" />
+                <element signature="e#3037#3038#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,27 +95,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Xml.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+            <state relative-caret-position="256">
+              <caret line="92" selection-start-line="92" selection-end-line="92" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Xml#1;class#Xml#0" />
+                <element signature="method#getParentFileName#0;class#Xml#0" />
+                <element signature="e#1363#1364#0" expanded="true" />
+                <element signature="e#1393#1394#0" expanded="true" />
+                <element signature="e#1429#1430#0" expanded="true" />
+                <element signature="e#1461#1462#0" expanded="true" />
                 <element signature="method#convertXmlToDocument#0;class#Xml#0" />
-                <element signature="method#mapXmlTextBlocks#0;class#Xml#0" />
+                <element signature="e#2841#2842#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FileFinder.java">
+        <entry file="file://$PROJECT_DIR$/src/XmlComparer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="489">
+              <caret line="105" column="16" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1031#1032#0" expanded="true" />
-                <element signature="e#1068#1069#0" expanded="true" />
-                <element signature="method#setAllFilePaths#0;class#FileFinder#0" />
+                <element signature="method#xmlElementIsEqual#0;class#XmlComparer#0" />
+                <element signature="method#xmlElementsAreEqual#0;class#XmlComparer#0" />
+                <element signature="method#xmlAttributeIsEqual#0;class#XmlComparer#0" />
+                <element signature="method#xmlAttributesAreEqual#0;class#XmlComparer#0" />
+                <element signature="e#1619#1755#0" />
+                <element signature="e#2702#2838#0" />
+                <element signature="method#templateParentFilenameEqualsResultsParentFilename#0;class#XmlComparer#0" />
+                <element signature="method#unequalElements#0;class#XmlComparer#0" />
+                <element signature="e#4227#4228#0" expanded="true" />
+                <element signature="e#4272#4273#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,13 +137,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ExcelSheet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1041">
-              <caret line="164" selection-start-line="164" selection-end-line="164" />
+            <state relative-caret-position="147">
+              <caret line="140" column="50" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#createCopy#0;class#ExcelSheet#0" />
-                <element signature="method#setTabNames#0;class#ExcelSheet#0" />
-                <element signature="method#writeWorkbook#0;class#ExcelSheet#0" />
               </folding>
             </state>
           </provider>
@@ -115,10 +158,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>xmlTest</find>
-      <find>errorsPerTab</find>
-      <find>setNumberOfXmlFiles</find>
-      <find>convert</find>
       <find>xml</find>
       <find>fillOutputSpreadsheet</find>
       <find>mapXmlToTextBlocks</find>
@@ -140,6 +179,15 @@
       <find>xmlsI</find>
       <find>write</find>
       <find>xmlsInBdo</find>
+      <find>tabName</find>
+      <find>fi</find>
+      <find>TC</find>
+      <find>ele</find>
+      <find>areEq</find>
+      <find>uneu</find>
+      <find>eleme</find>
+      <find>testCaseUnequalElements</find>
+      <find>custom</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,7 +197,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Workbook.java" />
-        <option value="$PROJECT_DIR$/test/WorkbookTest.java" />
         <option value="$PROJECT_DIR$/src/XML.java" />
         <option value="$PROJECT_DIR$/src/xmlReader.java" />
         <option value="$PROJECT_DIR$/src/XmlReader.java" />
@@ -157,19 +204,28 @@
         <option value="$PROJECT_DIR$/src/DirectoryParser.java" />
         <option value="$PROJECT_DIR$/src/DirectoryAndFileFinder.java" />
         <option value="$PROJECT_DIR$/src/XmlPackager.java" />
-        <option value="$PROJECT_DIR$/src/FileFinder.java" />
-        <option value="$PROJECT_DIR$/src/ExcelSheet.java" />
         <option value="$PROJECT_DIR$/src/XMLComparer.java" />
-        <option value="$PROJECT_DIR$/src/XmlComparer.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/FileFinder.java" />
+        <option value="$PROJECT_DIR$/test/a.java" />
+        <option value="$PROJECT_DIR$/src/ExcelSheet.java" />
+        <option value="$PROJECT_DIR$/test/sub/DirectoryNavigatorTest.java" />
+        <option value="$PROJECT_DIR$/test/DirectoryNavigatorTest.java" />
+        <option value="$PROJECT_DIR$/test/WorkbookTest.java" />
+        <option value="$PROJECT_DIR$/test/XmlTest.java" />
         <option value="$PROJECT_DIR$/src/Xml.java" />
+        <option value="$PROJECT_DIR$/src/XmlComparer.java" />
+        <option value="$PROJECT_DIR$/test/XmlComparerTest.java" />
+        <option value="$PROJECT_DIR$/test/BdoXmlCompTest.java" />
+        <option value="$PROJECT_DIR$/src/DirectoryNavigator.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/BdoXmlComp.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="385" />
+    <option name="x" value="420" />
     <option name="y" value="23" />
-    <option name="width" value="1084" />
+    <option name="width" value="1018" />
     <option name="height" value="826" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -190,6 +246,11 @@
               <item name="BDO" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="BDO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BDO" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -202,7 +263,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552162920160" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552332033189" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.23066103" />
@@ -228,23 +289,10 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="WorkbookTest" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in BDO" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
       <module name="BDO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WorkbookTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WorkbookTest.printSubDirectory" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
-      <module name="BDO" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WorkbookTest" />
-      <option name="METHOD_NAME" value="printSubDirectory" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -256,39 +304,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkbookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in BDO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BDO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WorkbookTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkbookTest.returnChildFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BdoXmlCompTest.templateFileNamesEqualResultsFileNames" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BDO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WorkbookTest" />
-      <option name="METHOD_NAME" value="returnChildFiles" />
+      <option name="MAIN_CLASS_NAME" value="BdoXmlCompTest" />
+      <option name="METHOD_NAME" value="templateFileNamesEqualResultsFileNames" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="XmlComparerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BDO" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="XmlComparerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Android JUnit.WorkbookTest" />
-      <item itemvalue="Android JUnit.WorkbookTest.printSubDirectory" />
+      <item itemvalue="Android JUnit.All in BDO" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.WorkbookTest" />
-      <item itemvalue="JUnit.WorkbookTest.returnChildFiles" />
+      <item itemvalue="JUnit.XmlComparerTest" />
+      <item itemvalue="JUnit.All in BDO" />
+      <item itemvalue="JUnit.BdoXmlCompTest.templateFileNamesEqualResultsFileNames" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.WorkbookTest" />
-        <item itemvalue="Android JUnit.WorkbookTest" />
-        <item itemvalue="Android JUnit.WorkbookTest.printSubDirectory" />
-        <item itemvalue="JUnit.WorkbookTest.returnChildFiles" />
+        <item itemvalue="JUnit.BdoXmlCompTest.templateFileNamesEqualResultsFileNames" />
+        <item itemvalue="JUnit.XmlComparerTest" />
+        <item itemvalue="Android JUnit.All in BDO" />
+        <item itemvalue="JUnit.All in BDO" />
       </list>
     </recent_temporary>
   </component>
@@ -306,42 +362,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WorkbookTest - 2019.03.06 at 10h 42m 52s.xml">
-      <configuration name="WorkbookTest" configurationId="JUnit" />
+    <history-entry file="XmlComparerTest - 2019.03.11 at 18h 40m 25s.xml">
+      <configuration name="XmlComparerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkbookTest - 2019.03.06 at 10h 42m 54s.xml">
-      <configuration name="WorkbookTest" configurationId="JUnit" />
+    <history-entry file="XmlComparerTest - 2019.03.11 at 18h 41m 01s.xml">
+      <configuration name="XmlComparerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkbookTest - 2019.03.06 at 10h 52m 22s.xml">
-      <configuration name="WorkbookTest" configurationId="AndroidJUnit" />
+    <history-entry file="XmlComparerTest - 2019.03.11 at 18h 46m 52s.xml">
+      <configuration name="XmlComparerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkbookTest - 2019.03.06 at 10h 53m 46s.xml">
-      <configuration name="WorkbookTest" configurationId="AndroidJUnit" />
+    <history-entry file="XmlComparerTest - 2019.03.11 at 18h 49m 01s.xml">
+      <configuration name="XmlComparerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkbookTest - 2019.03.06 at 14h 49m 48s.xml">
-      <configuration name="WorkbookTest" configurationId="AndroidJUnit" />
+    <history-entry file="XmlComparerTest - 2019.03.11 at 18h 51m 06s.xml">
+      <configuration name="XmlComparerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkbookTest - 2019.03.06 at 14h 50m 28s.xml">
-      <configuration name="WorkbookTest" configurationId="AndroidJUnit" />
+    <history-entry file="XmlComparerTest - 2019.03.11 at 18h 51m 28s.xml">
+      <configuration name="XmlComparerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkbookTest - 2019.03.06 at 14h 50m 53s.xml">
-      <configuration name="WorkbookTest" configurationId="JUnit" />
+    <history-entry file="BdoXmlCompTest_templateFileNamesEqualResultsFileNames - 2019.03.11 at 19h 11m 44s.xml">
+      <configuration name="BdoXmlCompTest.templateFileNamesEqualResultsFileNames" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkbookTest - 2019.03.06 at 14h 51m 28s.xml">
-      <configuration name="WorkbookTest" configurationId="JUnit" />
+    <history-entry file="BdoXmlCompTest_templateFileNamesEqualResultsFileNames - 2019.03.11 at 19h 13m 19s.xml">
+      <configuration name="BdoXmlCompTest.templateFileNamesEqualResultsFileNames" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkbookTest - 2019.03.06 at 14h 51m 51s.xml">
-      <configuration name="WorkbookTest" configurationId="JUnit" />
+    <history-entry file="BdoXmlCompTest_templateFileNamesEqualResultsFileNames - 2019.03.11 at 19h 14m 02s.xml">
+      <configuration name="BdoXmlCompTest.templateFileNamesEqualResultsFileNames" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkbookTest - 2019.03.06 at 15h 02m 25s.xml">
-      <configuration name="WorkbookTest" configurationId="JUnit" />
+    <history-entry file="BdoXmlCompTest_templateFileNamesEqualResultsFileNames - 2019.03.11 at 19h 14m 50s.xml">
+      <configuration name="BdoXmlCompTest.templateFileNamesEqualResultsFileNames" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="385" y="23" width="1084" height="826" extended-state="0" />
-    <editor active="true" />
+    <frame x="420" y="23" width="1018" height="826" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22360845" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21516393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -350,7 +405,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32833788" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2574932" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2574932" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39918256" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -370,7 +425,7 @@
       <window_info anchor="right" id="Maven" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.235012" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20153551" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -378,16 +433,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32918397" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32918397" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39972338" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32833788" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2574932" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39918256" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32918397" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32833788" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -396,7 +451,20 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven" order="8" />
     </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
@@ -618,46 +686,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/WorkbookTest.java">
+    <entry file="file://$PROJECT_DIR$/test/a.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1068#1069#0" expanded="true" />
-            <element signature="method#setAllFilePaths#0;class#FileFinder#0" />
-          </folding>
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ExcelSheet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1041">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        <state relative-caret-position="147">
+          <caret line="140" column="50" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createCopy#0;class#ExcelSheet#0" />
-            <element signature="method#setTabNames#0;class#ExcelSheet#0" />
-            <element signature="method#writeWorkbook#0;class#ExcelSheet#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/test/WorkbookTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/XmlTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getXmlFilePath#0;class#XmlComparerTest#0" />
+            <element signature="method#getXmlParentFileName#0;class#XmlComparerTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BDO.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/DirectoryNavigatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-610">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getDirectory#0;class#DirectoryNavigatorTest#0" />
+            <element signature="method#getSubDirectories#0;class#DirectoryNavigatorTest#0" />
+            <element signature="method#getAllFileNames#0;class#DirectoryNavigatorTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/XmlComparerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getDefaultXml#0;class#XmlComparerTest#0" />
+            <element signature="method#getDefaultXml#1;class#XmlComparerTest#0" />
+            <element signature="method#xmlElementIsEqual#0;class#XmlComparerTest#0" />
+            <element signature="method#xmlElementsAreEqual#0;class#XmlComparerTest#0" />
+            <element signature="method#xmlAttributeIsEqual#0;class#XmlComparerTest#0" />
+            <element signature="method#xmlAttributesAreEqual#0;class#XmlComparerTest#0" />
+            <element signature="method#defaultFile#0;class#XmlComparerTest#0" />
+            <element signature="method#defaultFilepathEqualsResultsFilepath#0;class#XmlComparerTest#0" />
+            <element signature="method#templateParentFilenameEqualsResultsParentFilename#0;class#XmlComparerTest#0" />
+            <element signature="method#getTemplateElements#0;class#XmlComparerTest#0" />
+            <element signature="method#getUnequalElements#0;class#XmlComparerTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/BdoXmlCompTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -666,25 +775,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Xml.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+        <state relative-caret-position="256">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Xml#1;class#Xml#0" />
+            <element signature="method#getParentFileName#0;class#Xml#0" />
+            <element signature="e#1363#1364#0" expanded="true" />
+            <element signature="e#1393#1394#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="true" />
             <element signature="method#convertXmlToDocument#0;class#Xml#0" />
-            <element signature="method#mapXmlTextBlocks#0;class#Xml#0" />
+            <element signature="e#2841#2842#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/XmlComparer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        <state relative-caret-position="489">
+          <caret line="105" column="16" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#directoriesAreEqual#0;class#XMLComparer#0" />
+            <element signature="method#xmlElementIsEqual#0;class#XmlComparer#0" />
+            <element signature="method#xmlElementsAreEqual#0;class#XmlComparer#0" />
+            <element signature="method#xmlAttributeIsEqual#0;class#XmlComparer#0" />
             <element signature="method#xmlAttributesAreEqual#0;class#XmlComparer#0" />
-            <element signature="method#xmlsInBdo#0;class#XMLComparer#0" />
+            <element signature="e#1619#1755#0" />
+            <element signature="e#2702#2838#0" />
+            <element signature="method#templateParentFilenameEqualsResultsParentFilename#0;class#XmlComparer#0" />
+            <element signature="method#unequalElements#0;class#XmlComparer#0" />
+            <element signature="e#4227#4228#0" expanded="true" />
+            <element signature="e#4272#4273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="78" column="46" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#bdoWriter#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DirectoryNavigator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#DirectoryNavigator#0;class#DirectoryNavigator#0" />
+            <element signature="method#setSubDirectories#0;class#DirectoryNavigator#0" />
+            <element signature="method#setSubDirectoryNames#0;class#DirectoryNavigator#0" />
+            <element signature="method#setAllFilePaths#0;class#DirectoryNavigator#0" />
+            <element signature="e#2353#2354#0" expanded="true" />
+            <element signature="e#2388#2389#0" expanded="true" />
+            <element signature="method#setAllFileNames#0;class#DirectoryNavigator#0" />
+            <element signature="e#3037#3038#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BdoXmlComp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="58" column="53" lean-forward="true" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#BdoXmlComp#0;class#BdoXmlComp#0" />
+            <element signature="method#setTemplateXmlFilepathsMappedToResultsXmlFilepaths#0;class#BdoXmlComp#0" />
+            <element signature="method#getTemplateXmlFilepathsMappedToResultsXmlFilepaths#0;class#BdoXmlComp#0" />
           </folding>
         </state>
       </provider>

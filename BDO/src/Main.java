@@ -1,6 +1,7 @@
 import jxl.write.WritableWorkbook;
 
-import java.util.TreeMap;
+import java.util.ArrayList;
+import java.util.Map;
 
 public class Main {
 
@@ -25,73 +26,58 @@ public class Main {
 
         scanner.close();*/
 
-        // Excel
-
 
 //        bdoWriter();
+        xmlComparator();
 
-//        Xml Comparator
 
+    }
 
-        String element = "textBlock";
-        String attribute = "id";
+    private static void xmlComparator() {
+
+        String rootDirTestOne = "/users/jensen/Desktop/BDOs/xmlTestOne/xmlOne";
+        String rootDirTestTwo = "/users/jensen/Desktop/BDOs/xmlTestTwo/xmlTwo";
+
+        DirectoryNavigator directoryNavigatorOne = new DirectoryNavigator(rootDirTestOne);
+        DirectoryNavigator directoryNavigatorTwo = new DirectoryNavigator(rootDirTestTwo);
+
+//        directoryNavigatorOne.setSubDirectories(directoryNavigatorOne.getRootDirectory());
+
 
         String rootBDOTestOneDirectory
                 = "/users/jensen/Desktop/BDOs/xmlTestOne/xmlOne/3P01/TC 1 - 3P01.xml";
-        Xml one = new Xml(rootBDOTestOneDirectory, element, attribute);
-        one.mapXmlTextBlocks();
-        TreeMap<String, String> xmlOne = one.getXmlMappedTextBlocks();
-//        System.out.println("one = " + xmlOne);
-
         String rootBDOTestTwoDirectory
                 = "/users/jensen/Desktop/BDOs/xmlTestTwo/xmlTwo/3P01/TC 1 - 3P01.xml";
-        Xml two = new Xml(rootBDOTestTwoDirectory, element, attribute);
 
-        two.mapXmlTextBlocks();
-        TreeMap<String, String> xmlTwo = two.getXmlMappedTextBlocks();
-//        System.out.println("two = " + xmlTwo);
+        Xml one = new Xml(rootBDOTestOneDirectory);
+        Xml two = new Xml(rootBDOTestTwoDirectory);
 
-        XmlComparer xmlComparer = new XmlComparer(xmlOne, xmlTwo);
+        one.setXmlMappedTextBlocks();
+        two.setXmlMappedTextBlocks();
 
+        XmlComparer xmlComparer = new XmlComparer(one, two);
 
-        System.out.println("Elements are equal: " + xmlComparer.xmlElementsAreEqual());
-        System.out.println("Attribute are equal: " + xmlComparer.xmlAttributesAreEqual());
-//        xmlComparer.setXmlDirectories();
-//        System.out.println(xmlComparer.getXmlDirectories());
+        xmlComparer.setUnequalElements();
 
+        BdoXmlComp bdoXmlComp = new BdoXmlComp(directoryNavigatorOne, directoryNavigatorTwo);
 
-       /* XML Test
+        directoryNavigatorOne.setSubDirectories(directoryNavigatorOne.getRootDirectory());
+        directoryNavigatorOne.setSubDirectoryNames();
+        directoryNavigatorOne.setAllFilePaths(directoryNavigatorOne.getRootDirectory());
+        directoryNavigatorOne.setAllFileNames();
 
-        Xml xml = new Xml("/users/jensen/Desktop/BDOs/xmls/3P01/TC 1 - 3P01.xml",
-                "textBlock",
-                "id");
+        directoryNavigatorTwo.setSubDirectories(directoryNavigatorTwo.getRootDirectory());
+        directoryNavigatorTwo.setSubDirectoryNames();
+        directoryNavigatorTwo.setAllFilePaths(directoryNavigatorTwo.getRootDirectory());
+        directoryNavigatorTwo.setAllFileNames();
 
-        xml.mapXmlTextBlocks();
-        // For 1 xml
-//        System.out.println(xml.getXmlMappedTextBlocks());
-        // XML works
+        boolean templateFileNamesEqualResultsFileNames
+                = bdoXmlComp.templateFileNamesEqualResultsFileNames();
 
-        FileFinder directoryParser = new FileFinder(rootBDOdirectory);
+        bdoXmlComp.setTemplateXmlFilepathsMappedToResultsXmlFilepaths();
 
-        // Get root directory
-        String rootDirectory = directoryParser.getRootDirectory();
-//        System.out.println(rootDirectory);
-
-        // Set sub directories
-        directoryParser.setSubDirectories(rootDirectory);
-
-        // Get sub directories
-        ArrayList<String> subDirectories = directoryParser.getSubDirectories();
-//        System.out.println(subDirectories);
-
-        // Set all xml files
-        directoryParser.setAllFilePaths();
-
-        // Get all xml files
-        ArrayList<String> allFilePaths = directoryParser.getAllFilePaths();
-//        System.out.println(allFilePaths);
-
-*/
+//        System.out.println(bdoXmlComp.getTemplateXmlFilepathsMappedToResultsXmlFilepaths());
+        bdoXmlComp.as();
     }
 
     private static void bdoWriter() {
@@ -101,23 +87,23 @@ public class Main {
         int columnInitial = 3;
 
 
-        // Make a fileFinder outside of Excel --> to pass to spreadsheet
-        FileFinder fileFinder = new FileFinder(rootBDOdirectory);
-        fileFinder.setRootDirectory(rootBDOdirectory);
+        // Make a directoryNavigator outside of Excel --> to pass to spreadsheet
+        DirectoryNavigator directoryNavigator = new DirectoryNavigator(rootBDOdirectory);
+//        directoryNavigator.setRootDirectory(rootBDOdirectory);
 
         ExcelSheet resultsWorkbook
-                = new ExcelSheet(fileFinder, excelMasterFilepath, excelResultsFilepath);
+                = new ExcelSheet(directoryNavigator, excelMasterFilepath, excelResultsFilepath);
 
         WritableWorkbook excelCopy
                 = resultsWorkbook.createCopy(excelMasterFilepath, excelResultsFilepath);
 
 //        Which is better??
-        String rootDirectory = fileFinder.getRootDirectory();                           // Through file finder object
-//        String rootDirectory = resultsWorkbook.getFileFinder().getRootDirectory();    // Through workbook
-        fileFinder.setSubDirectories(rootDirectory);                                    // Through file finder object
-//        resultsWorkbook.getFileFinder().setSubDirectories(rootDirectory);             // Through workbook
+        String rootDirectory = directoryNavigator.getRootDirectory();                           // Through file finder object
+//        String rootDirectory = resultsWorkbook.getDirectoryNavigator().getRootDirectory();    // Through workbook
+        directoryNavigator.setSubDirectories(rootDirectory);                                    // Through file finder object
+//        resultsWorkbook.getDirectoryNavigator().setSubDirectories(rootDirectory);             // Through workbook
 
-        resultsWorkbook.setTabNames();
+//        resultsWorkbook.setSubDirectoryNames();
         resultsWorkbook.writeWorkbook(excelCopy);
     }
 }

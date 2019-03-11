@@ -1,95 +1,125 @@
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.*;
 
 public class XmlComparer {
-    TreeMap<String, String> xmlTemplate;
-    TreeMap<String, String> xmlResult;
-    ArrayList<String> xmlDirectories;
 
-    public XmlComparer(TreeMap<String, String> xmlTemplate, TreeMap<String, String> xmlResult) {
-        this.xmlTemplate = xmlTemplate;
-        this.xmlResult = xmlResult;
+    private Xml xmlTemplate;
+    private Xml xmlResult;
+    private TreeMap<String, String> xmlTemplateMapping;
+    private TreeMap<String, String> xmlResultMapping;
+    private Set<String> xmlTemplateElements;
+    private Map<String, Map<String, String>> testCaseUnequalElements;
+
+    // is xmlTemplateMapping & xmlResultMapping in here as a functional call good form?
+    public XmlComparer(Xml xmlTemplate, Xml xmlResult) {
+        this.xmlTemplate                = xmlTemplate;
+        this.xmlTemplateMapping         = xmlTemplate.getXmlMappedTextBlocks();
+        this.xmlResult                  = xmlResult;
+        this.xmlResultMapping           = xmlResult.getXmlMappedTextBlocks();
+        this.xmlTemplateElements        = new TreeSet<>();
+        this.testCaseUnequalElements    = new TreeMap<>();
+    }
+
+    public Xml getXmlTemplate() {
+        return xmlTemplate;
+    }
+
+    public Xml getXmlResult() {
+        return xmlResult;
+    }
+
+    public boolean xmlElementIsEqual() {
+        return xmlTemplate.getElement()
+                .equals(xmlResult.getElement());
     }
 
     public boolean xmlElementsAreEqual() {
-        List<String> templateElements = new ArrayList<>(xmlTemplate.keySet());
-        List<String> resultsElements = new ArrayList<>(xmlResult.keySet());
+        boolean xmlElementsAreEqual = false;
 
-        return templateElements.equals(resultsElements);
+        if(xmlElementIsEqual()) {
+            List<String> templateElements
+                    = new ArrayList<>(xmlTemplate.getXmlMappedTextBlocks().keySet());
+            List<String> resultsElements
+                    = new ArrayList<>(xmlResult.getXmlMappedTextBlocks().keySet());
+            xmlElementsAreEqual = templateElements.equals(resultsElements);
+        }
+        return xmlElementsAreEqual;
+    }
+
+
+    public boolean xmlAttributeIsEqual() {
+        return xmlTemplate
+                .getAttribute()
+                .equals(xmlResult.getAttribute());
     }
 
     public boolean xmlAttributesAreEqual() {
-        List<String> templateAttributes = new ArrayList<>(xmlTemplate.values());
-        List<String> resultsElements = new ArrayList<>(xmlResult.values());
+        boolean isEqual = false;
 
-        return templateAttributes.equals(resultsElements);
+        if (xmlAttributeIsEqual()) {
+            List<String> templateAttributes = new ArrayList<>(xmlTemplateMapping.values());
+            List<String> resultsElements = new ArrayList<>(xmlResultMapping.values());
+
+            isEqual = templateAttributes.equals(resultsElements);
+        }
+        return isEqual;
     }
 
 
+    public boolean templateFilenameEqualsResultsFilename() {
+        return xmlTemplate
+                .getFileName()
+                .equals(xmlResult.getFileName());
+    }
 
-    public void setXmlDirectories() {
-        xmlDirectories = new ArrayList<>();
+    public boolean templateFilepathEqualsResultsFilepath() {
+        return xmlTemplate
+                .getFilePath()
+                .equals(xmlResult.getFilePath());
+    }
 
+    public boolean templateParentFilenameEqualsResultsParentFilename() {
+        return xmlTemplate
+                .getParentFileName()
+                .equals(xmlResult.getParentFileName());
+    }
+
+
+    public void setTemplateElements() {
         if (xmlElementsAreEqual()) {
-            xmlDirectories.addAll(xmlTemplate.keySet());
+            xmlTemplateElements.addAll(xmlTemplateMapping.keySet());
+        } else {
+            System.out.println("Template and result xml elements are not identical. Check result xml file.");
         }
     }
 
-    public ArrayList<String> getXmlDirectories() {
-        return xmlDirectories;
+    // Need to setTemplateElements()
+    public Set<String> getTemplateElements() {
+        if (xmlTemplateElements.isEmpty()) {
+            setTemplateElements();
+        }
+        return xmlTemplateElements;
     }
 
-    public TreeMap<String, TreeMap<String, String>>
-    xmlsInBdo(TreeMap<String, TreeMap<String, String>> xmlDirectory, String bdo) {
+    // Need to setTemplateElements()
+    public void setUnequalElements() {
 
-        TreeMap<String, TreeMap<String, String>> bdoDirectory = new TreeMap<>();
-
-        for (String s : xmlDirectory.keySet()) {
-            TreeMap<String, String> xmls;
-            Path xml = Paths.get(s);
-            String bdoString = xml.getName(xml.getNameCount() - 2).toString();
-
-            // 3P01 == ../../..3P01/...xml
-            if (bdo.equals(bdoString)) {
-                xmls = xmlDirectory.get(s);
-                bdoDirectory.put(s, xmls);
+        Map<String, String> unequalElements = new TreeMap<>();
+        // Seems like bad programming
+        if (xmlTemplateElements.isEmpty()) {
+            setTemplateElements();
+        }
+        for (String element : xmlTemplateElements) {
+            if (!xmlTemplateMapping.get(element).equals(xmlResultMapping.get(element))) {
+                unequalElements.put(element, xmlResultMapping.get(element));
             }
         }
-        return bdoDirectory;
+        testCaseUnequalElements.put(xmlResult.getFilePath(), unequalElements);
     }
 
-//    public void compareXMLs() {
-//        TreeMap<String, String> mismatches = null;
-//
-//        if(xmlElementsAreEqual()) {
-//            for (String directory : xmlTemplate.keySet()) {
-//                // xml file paths (x24)
-////                System.out.println(directory);
-//
-//                TreeMap<String, String> xmlTemplateBlocks = xmlTemplate.get(directory);
-//                System.out.println("template " + xmlTemplateBlocks);
-//
-//                TreeMap<String, String> xmlResultBlocks = xmlResult.get(directory);
-//                System.out.println("result " + xmlResultBlocks);
-//
-//                // element = 10.10
-//                //.get(element) = Y
-//                for (String element : xmlTemplateBlocks.keySet()) {
-//
-////                    System.out.println("result " + xmlResultBlocks.get(element)
-////                            + " template " + xmlTemplateBlocks.get(element));
-//
-////                    if (!element.equals(xmlResultBlocks.get(element))) {
-////                        mismatches.put(directory, xmlResultBlocks.get(element));
-//                        //                    System.out.println(xmlResultBlocks.get(element));
-////                    }
-//                }
-//                //            System.out.println(mismatches);
-//            }
-//        }
-//    }
+    public Map<String, Map<String, String>> getUnequalElements() {
+        return testCaseUnequalElements;
+    }
 
 }

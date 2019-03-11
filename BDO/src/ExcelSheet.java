@@ -7,15 +7,13 @@ import jxl.write.WriteException;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
 public class ExcelSheet {
 
-    private FileFinder fileFinder;
+    private DirectoryNavigator directoryNavigator;
     private String excelMaster;
     private String excelCopy;
     private int columnInitial;
@@ -25,8 +23,8 @@ public class ExcelSheet {
     private String attribute;
     private Map<String, String> tabNames;
 
-    ExcelSheet(FileFinder fileFinder, String excelMaster, String excelCopy) {
-        this.fileFinder = fileFinder;
+    ExcelSheet(DirectoryNavigator directoryNavigator, String excelMaster, String excelCopy) {
+        this.directoryNavigator = directoryNavigator;
         this.excelMaster = excelMaster;
         this.excelCopy = excelCopy;
         this.columnInitial = 3;
@@ -34,7 +32,8 @@ public class ExcelSheet {
         this.columnIterator = 5;
         this.element = "textBlock";
         this.attribute = "id";
-        this.tabNames = new TreeMap<>();
+//        this.tabNames = new TreeMap<>();
+        this.tabNames = directoryNavigator.getSubDirectoryNames();
     }
 
     public void setColumnInitial(int columnInitial) {
@@ -61,6 +60,7 @@ public class ExcelSheet {
         return columnIterator;
     }
 
+
     public void setElement(String element) {
         this.element = element;
     }
@@ -76,6 +76,7 @@ public class ExcelSheet {
     public String getAttribute() {
         return attribute;
     }
+
 
     public String getExcelCopy() {
         return excelCopy;
@@ -98,16 +99,17 @@ public class ExcelSheet {
         return copy;
     }
 
-    FileFinder getFileFinder() {
-        return fileFinder;
+    DirectoryNavigator getDirectoryNavigator() {
+        return directoryNavigator;
     }
 
-    void setTabNames() {
-        for (String subDirectory : fileFinder.getSubDirectories()) {
-            Path path = Paths.get(subDirectory);
-            tabNames.put(subDirectory, path.getName(path.getNameCount() - 1).toString());
-        }
-    }
+
+//    void setSubDirectoryNames() {
+//        for (String subDirectory : directoryNavigator.getSubDirectories()) {
+//            Path path = Paths.get(subDirectory);
+//            tabNames.put(subDirectory, path.getName(path.getNameCount() - 1).toString());
+//        }
+//    }
 
     private void writeColumn(WritableWorkbook results,
                              TreeMap<String, String> xml,
@@ -134,18 +136,21 @@ public class ExcelSheet {
     }
 
     void writeWorkbook(WritableWorkbook results) {
+        // Should this be called here?
+
+        directoryNavigator.setSubDirectoryNames();
 
         for (String tabName : tabNames.keySet()) {
             TreeMap<String, String> xml;
 
-            FileFinder temp = new FileFinder(tabName);
+            DirectoryNavigator temp = new DirectoryNavigator(tabName);
             temp.setSubDirectories(temp.getRootDirectory());
             ArrayList<String> xmls = temp.getSubDirectories();
 
             int columns = 0;
             for (String file : xmls) {
                 Xml testCase = new Xml(file, element, attribute);
-                testCase.mapXmlTextBlocks();
+                testCase.setXmlMappedTextBlocks();
                 xml = testCase.getXmlMappedTextBlocks();
                 writeColumn(results, xml, tabNames.get(tabName));
                 rowOffset -= xml.size();
